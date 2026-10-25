@@ -1,0 +1,975 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>30. Maths syllabus and free resources · Study book</title>
+<style>
+:root{--bg:#fbfaf7;--fg:#1f2328;--muted:#5f6670;--line:#e3e0d8;--card:#f3f1ea;--link:#0b57d0;--code:#efede6;--accent:#2f5d8a;--fill:#fff2a8}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:18px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--link);text-underline-offset:2px}
+.topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:12px;padding:10px 16px;background:var(--bg);border-bottom:1px solid var(--line)}
+.brand{font-weight:600;color:var(--fg);text-decoration:none}
+.menu-btn{font:inherit;font-size:15px;padding:6px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);cursor:pointer}
+.layout{display:block}
+.sidenav{display:none;font-size:15px;line-height:1.45;padding:12px 18px 40px}
+body.nav-open .sidenav{display:block;border-bottom:1px solid var(--line);background:var(--card)}
+.sidenav ul{list-style:none;margin:0;padding:0}
+.sidenav li{margin:2px 0}
+.sidenav a{display:block;padding:4px 6px;border-radius:6px;color:var(--fg);text-decoration:none}
+.sidenav a:hover{background:var(--line)}
+.sidenav a[aria-current=page]{background:var(--accent);color:#fff}
+.sidenav .part{margin:14px 0 4px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.sidenav .n{display:inline-block;min-width:1.8em;color:var(--muted)}
+.sidenav a[aria-current=page] .n{color:#fff}
+[data-ch].done>a::after,.toc-list li.done .t::after{content:" \2713";color:#2e7d32;font-weight:700}
+.page{max-width:760px;margin:0 auto;padding:20px 20px 60px}
+.chead{margin:8px 0 22px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.chead .part{margin:0;font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.chead .chno{margin:6px 0 0;font-size:15px;color:var(--accent);font-weight:600}
+.chead h1{margin:4px 0 12px}
+.when{margin:0;padding:10px 14px;background:var(--card);border-left:4px solid var(--accent);border-radius:6px;font-size:16px}
+h1{font-size:1.75em;line-height:1.25}
+h2{font-size:1.35em;line-height:1.3;margin-top:2em;padding-top:.4em;border-top:1px solid var(--line)}
+h3{font-size:1.12em;line-height:1.35;margin-top:1.6em}
+h4{font-size:1em;margin-top:1.4em}
+p,li{overflow-wrap:break-word}
+li{margin:.25em 0}
+code{font:0.86em/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--code);padding:1px 5px;border-radius:4px;overflow-wrap:anywhere}
+pre{background:var(--code);padding:12px 14px;border-radius:8px;overflow-x:auto;font-size:14px;line-height:1.5}
+pre code{background:none;padding:0;overflow-wrap:normal;font-size:1em}
+blockquote{margin:1em 0;padding:6px 16px;border-left:4px solid #b9c7da;background:var(--card);border-radius:4px}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1em 0}
+table{border-collapse:collapse;font-size:15px;line-height:1.45;min-width:100%}
+th,td{border:1px solid var(--line);padding:6px 9px;text-align:left;vertical-align:top}
+th{background:var(--card)}
+hr{border:0;border-top:1px solid var(--line);margin:2em 0}
+mark.fill{background:var(--fill);color:#1f2328;padding:0 3px;border-radius:3px}
+li.task{list-style:none}
+li.task .cb{display:inline-block;width:.85em;height:.85em;border:2px solid var(--muted);border-radius:3px;margin:0 .45em 0 -1.3em;vertical-align:-.05em}
+li.task .cb.on{background:var(--accent);border-color:var(--accent)}
+details.box{margin:0 0 20px;padding:8px 14px;background:var(--card);border-radius:8px}
+details.box summary{cursor:pointer;font-weight:600}
+details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
+.slides figure{margin:0 0 14px}
+.slides img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:6px;background:#fff}
+.slides figcaption{font-size:14px;color:var(--muted);margin-top:4px}
+.donebox{margin:36px 0 16px;padding:14px 16px;background:var(--card);border-radius:10px;font-size:17px}
+.donebox label{cursor:pointer;display:flex;align-items:center;gap:10px}
+.donebox input,.toc-list input{width:22px;height:22px;accent-color:#2e7d32;flex:none}
+.pager{display:flex;gap:12px;justify-content:space-between;margin-top:8px}
+.pager a{flex:1 1 0;display:block;padding:12px 14px;border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--fg);background:var(--bg)}
+.pager a:hover{border-color:var(--accent)}
+.pager .lbl{display:block;font-size:13px;color:var(--muted)}
+.pager .next{text-align:right}
+.pager .ghost{visibility:hidden}
+.progress{margin:16px 0;padding:14px 16px;background:var(--card);border-radius:10px}
+.bar{height:10px;background:var(--line);border-radius:6px;overflow:hidden;margin:8px 0}
+.bar span{display:block;height:100%;width:0;background:#2e7d32}
+.parts-progress{list-style:none;padding:0;margin:6px 0 0;font-size:15px}
+.start{display:inline-block;margin:6px 0 4px;padding:10px 16px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+.toc-list{list-style:none;padding:0}
+.toc-list li{display:flex;gap:12px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--line)}
+.toc-list .t{font-weight:600}
+.toc-list .w{display:block;font-size:15px;color:var(--muted)}
+.muted{color:var(--muted);font-size:15px}
+@media (max-width:640px){body{font-size:17px}.page{padding:14px 16px 50px}h1{font-size:1.5em}.pager{flex-direction:column}.pager .next{text-align:left}}
+@media (min-width:1100px){
+ .menu-btn{display:none}
+ .layout{display:grid;grid-template-columns:290px 1fr}
+ .sidenav{display:block;position:sticky;top:49px;height:calc(100vh - 49px);overflow-y:auto;border-right:1px solid var(--line);background:var(--bg)}
+ body.nav-open .sidenav{border-bottom:0;background:var(--bg)}
+ .page{padding-top:28px}
+}
+@media (prefers-color-scheme:dark){
+ :root{--bg:#17181b;--fg:#e4e4e2;--muted:#a3a7ad;--line:#33353a;--card:#212328;--link:#8ab4f8;--code:#262830;--accent:#6c9bd2;--fill:#f3dc6b}
+ .slides img{background:#fff}
+ blockquote{border-left-color:#4a5a70}
+}
+</style>
+
+</head>
+<body>
+<header class="topbar"><button class="menu-btn" type="button" aria-controls="sidenav" aria-expanded="false">Contents</button><a class="brand" href="index.html">Study book</a></header>
+<div class="layout">
+<nav id="sidenav" class="sidenav" aria-label="Book contents"><ul>
+<li><a href="index.html">Home: how to use this book</a></li>
+<li><a href="contents.html">Contents</a></li>
+<li class="part">Part 1: Before Monday (23 to 26 Oct)</li>
+<li data-ch="ch01"><a href="ch01.html"><span class="n">1.</span>Presentation guide and script</a></li>
+<li data-ch="ch02"><a href="ch02.html"><span class="n">2.</span>Full script: from hello to the last slide</a></li>
+<li data-ch="ch03"><a href="ch03.html"><span class="n">3.</span>Mock interview: questions for your friend</a></li>
+<li data-ch="ch04"><a href="ch04.html"><span class="n">4.</span>The 15-minute game plan</a></li>
+<li data-ch="ch05"><a href="ch05.html"><span class="n">5.</span>Your proposal, explained simply</a></li>
+<li data-ch="ch06"><a href="ch06.html"><span class="n">6.</span>Core lab papers (GUIDE 1)</a></li>
+<li data-ch="ch07"><a href="ch07.html"><span class="n">7.</span>Lab profile and people</a></li>
+<li data-ch="ch08"><a href="ch08.html"><span class="n">8.</span>Dr. Ji in depth</a></li>
+<li data-ch="ch09"><a href="ch09.html"><span class="n">9.</span>Dr. Reid in depth</a></li>
+<li data-ch="ch10"><a href="ch10.html"><span class="n">10.</span>Weak points and honest answers</a></li>
+<li data-ch="ch11"><a href="ch11.html"><span class="n">11.</span>Question bank with model answers</a></li>
+<li data-ch="ch12"><a href="ch12.html"><span class="n">12.</span>Questions to ask the lab</a></li>
+<li data-ch="ch13"><a href="ch13.html"><span class="n">13.</span>Day-of checklist</a></li>
+<li data-ch="ch14"><a href="ch14.html"><span class="n">14.</span>Email templates</a></li>
+<li class="part">Part 2: After Monday to mid-November</li>
+<li data-ch="ch15"><a href="ch15.html"><span class="n">15.</span>IPGP scholarship: decide now</a></li>
+<li data-ch="ch16"><a href="ch16.html"><span class="n">16.</span>Maths study plan</a></li>
+<li class="part">Part 3: December to early February</li>
+<li data-ch="ch17"><a href="ch17.html"><span class="n">17.</span>More lab papers (GUIDE 2)</a></li>
+<li data-ch="ch18"><a href="ch18.html"><span class="n">18.</span>Prof. Iida and Dr. Kashiwa in depth</a></li>
+<li data-ch="ch19"><a href="ch19.html"><span class="n">19.</span>Cited and related papers (GUIDE 3)</a></li>
+<li data-ch="ch20"><a href="ch20.html"><span class="n">20.</span>Statistics primer</a></li>
+<li data-ch="ch21"><a href="ch21.html"><span class="n">21.</span>SE and coding agents primer</a></li>
+<li data-ch="ch22"><a href="ch22.html"><span class="n">22.</span>Strategy to win the interview</a></li>
+<li data-ch="ch23"><a href="ch23.html"><span class="n">23.</span>Optional mini pilot</a></li>
+<li class="part">Part 4: February to the exam (10 March)</li>
+<li data-ch="ch24"><a href="ch24.html"><span class="n">24.</span>Maths topic checklist and formulas</a></li>
+<li data-ch="ch25"><a href="ch25.html"><span class="n">25.</span>50 maths practice problems</a></li>
+<li data-ch="ch26"><a href="ch26.html"><span class="n">26.</span>How to do oral maths</a></li>
+<li data-ch="ch27"><a href="ch27.html"><span class="n">27.</span>Self-intro and pitch scripts</a></li>
+<li class="part">Reference (look up when needed)</li>
+<li data-ch="ch28"><a href="ch28.html"><span class="n">28.</span>Glossary</a></li>
+<li data-ch="ch29"><a href="ch29.html"><span class="n">29.</span>Intel report</a></li>
+<li data-ch="ch30"><a href="ch30.html" aria-current="page"><span class="n">30.</span>Maths syllabus and free resources</a></li>
+</ul></nav>
+<main class="page">
+<article>
+<header class="chead">
+<p class="part">Reference (look up when needed)</p>
+<p class="chno">Chapter 30 of 30</p>
+<h1>NAIST oral math: official syllabus and legal free resources</h1>
+<p class="when"><strong>When and how long:</strong> Look up only when needed: a maths topic needs more explanation.</p>
+</header>
+
+<p>Prepared 21 Oct 2026 for the official entrance exam (online interview, Feb/Mar 2027).
+Labels used below:</p>
+<ul>
+<li><strong>Verified</strong>: I read it today in an official or primary source (NAIST pages and PDFs, the publisher or author, MIT OCW).</li>
+<li><strong>Anecdotal</strong>: one applicant's blog or a student-made file. Useful for style, not guaranteed.</li>
+<li><strong>My mapping / my summary</strong>: my own judgement of which free resource fits which chapter.</li>
+</ul>
+<p>All downloaded files are in <code>resources/</code> next to this file (see section 6).</p>
+<hr />
+<h2 id="0-the-short-version">0. The short version</h2>
+<ul>
+<li><strong>Scope (verified, 2027 Guide):</strong> Algebra = Strang, <em>Introduction to Linear Algebra</em>, 4th ed., Chapters 1 to 7. Analysis = Lang, <em>A First Course in Calculus</em>, 5th ed., Chapters 1 to 15.</li>
+<li><strong>Format (verified):</strong> two problems on screen, one algebra and one analysis. You solve and explain them in about 12 minutes. No preview time, no choice of problems. You write on a sketchbook and hold it up to the camera. Problems are shown in English if you take the exam in English.</li>
+<li><strong>How it is marked (verified, Japanese Q&amp;A):</strong> not only whether you get the answer, but the solving process, how clearly you explain, and how you answer related follow-up questions. Math is 30 of 200 points.</li>
+<li><strong>Level (verified, Japanese Q&amp;A):</strong> the math taught in the first and second year of a science undergraduate degree.</li>
+<li><strong>What applicants report (anecdotal):</strong> short, standard problems with 2 small parts. Examiners give hints, point out sign errors and give partial credit. Common topics: eigenvalues and diagonalization, rank, determinants, linearity, Gram-Schmidt, positive definite matrices; limits, tangent lines, curve sketching, definite integrals, series.</li>
+<li><strong>Best free core (my mapping):</strong> MIT OCW 18.06SC (Strang's own lectures, built on the 4th edition) for algebra, and OpenStax Calculus Vol. 1 to 3 plus MIT OCW 18.01SC for analysis. 3Blue1Brown for intuition. Practise out loud with a timer.</li>
+</ul>
+<hr />
+<h2 id="1-what-naist-officially-says-verified">1. What NAIST officially says (verified)</h2>
+<h3 id="11-scope-three-official-wordings">1.1 Scope, three official wordings</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Algebra</th>
+<th>Analysis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2027 Master's Admission Guide (<code>../01_Your_Documents/NAIST_official/NAIST_2027_Masters_Admission_Guide.pdf</code>)</td>
+<td>"From Chapter 1 to Chapter 7", Strang, <em>Introduction to Linear Algebra</em>, <strong>Fourth</strong> edition, Wellesley-Cambridge Press</td>
+<td>"From Chapter 1 to Chapter 15", Serge Lang, <em>A First Course in Calculus</em>, <strong>Fifth</strong> edition, Springer</td>
+</tr>
+<tr>
+<td>Division page, English, last update 14 Nov 2022 (<a href="https://isw3.naist.jp/Admission/exam-en.html">https://isw3.naist.jp/Admission/exam-en.html</a>)</td>
+<td>Chapters 1 to 8 of the <strong>Fifth</strong> edition. "It is equivalent to Chapter 1 to Chapter 7 if you have the fourth edition."</td>
+<td>Chapters 1 to 15, Lang, Springer (no edition given)</td>
+</tr>
+<tr>
+<td>Division page, Japanese (<a href="https://isw3.naist.jp/Admission/exam-ja.html">https://isw3.naist.jp/Admission/exam-ja.html</a>)</td>
+<td>"概ね" (roughly) Chapters 1 to 7, 4th edition. Japanese translation listed: 線形代数イントロダクション 原書第4版 (近代科学社)</td>
+<td>"概ね" (roughly) Chapters 1 to 15, Lang. Japanese translation listed: 解析入門 (岩波書店)</td>
+</tr>
+</tbody>
+</table></div>
+<p>What this means for you:</p>
+<ul>
+<li>Use the <strong>2027 Guide</strong> as the rule: Strang 4th ed. Ch. 1 to 7 and Lang 5th ed. Ch. 1 to 15.</li>
+<li>If you can only get the Strang <strong>5th</strong> edition, study its Chapters 1 to 8 (mapping table in section 4.1).</li>
+<li>The Japanese page says "roughly", so do not panic about one section at the edge.</li>
+<li>Japanese blogs often use the Japanese translation of Lang (several say it is from the 3rd edition, anecdotal). Their chapter numbers may not match the English 5th edition.</li>
+</ul>
+<h3 id="12-format-of-the-math-part-verified">1.2 Format of the math part (verified)</h3>
+<ul>
+<li>English Q&amp;A (<a href="https://isw3.naist.jp/Admission/nyushiQ_A-en.html">https://isw3.naist.jp/Admission/nyushiQ_A-en.html</a>): "The examiners will show on-screen two math problems (one from Algebra and one from Analysis). They will ask you to solve and explain your solutions within 12 minutes." There is "neither a 10-minute preview time (before the interview) nor multiple questions to choose from."</li>
+<li>Division page (English, 2022): math examiners come in first, about 12 minutes of math, then they leave and the research interviewers come in. "Please write the answer on a sketchbook in front of the camera and explain it."</li>
+<li>Official guideline video (downloaded, <a href="https://isw3.naist.jp/Admission/img/nyushi/online-math-exam-guideline_en.mp4"><code>resources/00_NAIST_official/NAIST_online_math_exam_guideline_EN.mp4</code></a>, 3 min 37 s). I read the slides (I could not make a transcript of the audio). The slides say:<ul>
+<li>Device: laptop or desktop with camera and mic, or a smartphone on a tripod.</li>
+<li>Sketchbook "about A4 size" and a <strong>thick pen</strong>, so examiners can read your writing on screen.</li>
+<li>Quiet private room, no third person. The examiner may ask you to rotate the camera to show the room.</li>
+<li>Webex is used. Both video and audio are required.</li>
+<li>"In actual examination, the mathematic problems are shown in English" (English version of the video).</li>
+<li>"Please hold the answer so that the examiners can see the solving procedures well" and "Please follow the advise and comments from the examiners".</li>
+</ul>
+</li>
+<li>Japanese Q&amp;A (<a href="https://isw3.naist.jp/Admission/nyushiQ_A-ja.html">https://isw3.naist.jp/Admission/nyushiQ_A-ja.html</a>):<ul>
+<li>Level: "理系の学部1・2年で習う数学です" (math learned in years 1 and 2 of a science undergraduate degree).</li>
+<li>Marking: "単に問題が解けたかどうかだけでなく、解くプロセス、説明の明快さ、関連する質問に対する受け答えなどを総合的に評価します" (not only whether you solved it, but the process, clarity of explanation and answers to related questions, judged together).</li>
+<li>Points: documents 50, English 30, math 30, interview 90, total 200.</li>
+<li>"面接の中で問題を解く方法を説明しつつ、解答するようにしてください" (explain how you solve it while you solve it).</li>
+</ul>
+</li>
+</ul>
+<h3 id="13-timing-conflict-unresolved">1.3 Timing conflict (unresolved)</h3>
+<ul>
+<li>The 2027 Guide says a <strong>20 minute</strong> interview in total (math plus research questions).</li>
+<li>The 2022 Division page says about 12 minutes math plus about 12 minutes research, about 30 minutes in total. An older page (<a href="https://isw3.naist.jp/IS/nyushi/exam-e.html">https://isw3.naist.jp/IS/nyushi/exam-e.html</a>, updated Apr 2021) also says a 30-minute interview.</li>
+<li>Applicants in 2021 to 2024 report <strong>10 minutes</strong> for the two math problems (anecdotal, section 3).</li>
+<li>Plan for <strong>about 5 minutes per problem</strong>, including explaining.</li>
+</ul>
+<hr />
+<h2 id="2-official-example-questions-verified-but-old">2. Official example questions (verified, but old)</h2>
+<p>NAIST still hosts an official example sheet, in English and Japanese. Both are downloaded:</p>
+<ul>
+<li><a href="http://isw3.naist.jp/IS/nyushi/faq/examquestions_e.pdf"><code>resources/00_NAIST_official/NAIST_math_example_questions_EN.pdf</code></a> (from <a href="http://isw3.naist.jp/IS/nyushi/faq/examquestions_e.pdf">http://isw3.naist.jp/IS/nyushi/faq/examquestions_e.pdf</a>, PDF created June 2013)</li>
+<li><a href="http://isw3.naist.jp/IS/nyushi/faq/examquestions.pdf"><code>resources/00_NAIST_official/NAIST_math_example_questions_JA.pdf</code></a> (from <a href="http://isw3.naist.jp/IS/nyushi/faq/examquestions.pdf">http://isw3.naist.jp/IS/nyushi/faq/examquestions.pdf</a>, created April 2013)</li>
+</ul>
+<p>They are from the <strong>old in-person format</strong> ("Choose one of the two algebra problems, and one of the two analysis problems"). Today there is no choice. The questions:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Question (as written in the English PDF)</th>
+<th>Where it lives (my mapping)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Algebra 1</td>
+<td>x is an arbitrary vector and a a constant vector in a vector space V. Show that the mapping f that sends x to x + a is not a linear mapping.</td>
+<td>Strang 7.1 (idea of a linear transformation). Key: f(0) = a, which is not 0 unless a = 0.</td>
+</tr>
+<tr>
+<td>Algebra 2</td>
+<td>A = diag(a, a, a), N = [[0,1,0],[0,0,1],[0,0,0]]. (1) Show AN = NA. (2) Calculate N^2 and N^3. (3) Calculate (A + N)^k.</td>
+<td>Strang 2.4 (matrix rules), 6.6 (Jordan form idea). Uses the binomial theorem because A and N commute and N^3 = 0.</td>
+</tr>
+<tr>
+<td>Analysis 1</td>
+<td>Find the limit of (1 - cos x)/x^2 as x goes to 0.</td>
+<td>Lang Ch. IV §5 (two basic limits) or Ch. XIII §8 (limits with Taylor's formula). Answer 1/2.</td>
+</tr>
+<tr>
+<td>Analysis 2</td>
+<td>Solve f'' + 2f' - 3f = 0 with f(0) = 0, f'(0) = 4.</td>
+<td>Not a chapter title in Lang Ch. 1 to 15 (see 5.17). Strang 6.3 (differential equations with eigenvalues) or OpenStax Vol. 3, 7.1.</td>
+</tr>
+</tbody>
+</table></div>
+<p>The analysis 2 question shows that NAIST has asked a little outside the strict chapter list before. So learn constant-coefficient second-order equations too (it takes one evening).</p>
+<hr />
+<h2 id="3-what-applicants-report-anecdotal">3. What applicants report (anecdotal)</h2>
+<p>All of these are personal blogs or student-made files. Exact wording is often from memory. I give them to show <strong>style and level</strong>, not as a list of what will be asked.</p>
+<h3 id="31-online-format-2021-onwards-closest-to-your-exam">3.1 Online format (2021 onwards), closest to your exam</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Exam (as the writer labels it)</th>
+<th>Language</th>
+<th>Algebra question</th>
+<th>Analysis question</th>
+<th>Notes</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2022 spring entry, 3rd exam (early 2022)</td>
+<td><strong>English</strong></td>
+<td>det A = -1. Find det A^2, det(-A), det(0.5A), det A^-1.</td>
+<td>f(x) = sin x / x. (a) Find f'(x). (b) Find the limit of f'(x) as x goes to 0.</td>
+<td>Examiner gave hints and confirmed answers. Ran out of time on half of the algebra. Writer applied to a software engineering lab and took the exam in English.</td>
+<td><a href="https://gabutech.vercel.app/blog/ff5al_eh0i4">https://gabutech.vercel.app/blog/ff5al_eh0i4</a> and <a href="https://github.com/gabriel6181997/naist_entrance_exam/blob/main/math_exam_questions.pdf">https://github.com/gabriel6181997/naist_entrance_exam/blob/main/math_exam_questions.pdf</a></td>
+</tr>
+<tr>
+<td>2022 spring entry, 1st exam (Jul 2021)</td>
+<td>Japanese</td>
+<td>Positive definite matrix (2 parts). A friend got rank of a 3 by 3 matrix.</td>
+<td>Gaussian integral (2 parts). A friend got the triple-angle formula.</td>
+<td>Two examiners. Sign errors were pointed out ("is that right?"). 10 minutes, no preview. Questions differ by time slot.</td>
+<td><a href="https://note.com/dovedovepigeon/n/n35d806eaa4cf">https://note.com/dovedovepigeon/n/n35d806eaa4cf</a></td>
+</tr>
+<tr>
+<td>2022 spring entry, 1st exam (Jul 2021)</td>
+<td>Japanese</td>
+<td>One row of A is v = (1, 0, -1). Prove v is not in the nullspace of A.</td>
+<td>Tangent line to y = tan x at x = pi/6.</td>
+<td>10 minutes for both. The writer did not recognise the word "nullspace" at first.</td>
+<td><a href="https://note.com/yama1009/n/n6aa2c5167510">https://note.com/yama1009/n/n6aa2c5167510</a></td>
+</tr>
+<tr>
+<td>2022 spring entry, 1st exam (2021)</td>
+<td>Japanese</td>
+<td>A question about an orthogonal basis.</td>
+<td>Given a curve, sketch its graph.</td>
+<td>After 5 silent minutes the examiner said "you can tell us your thinking so far". Out of time on algebra, the writer explained the plan (Gram-Schmidt) and the examiner said "just find one such vector".</td>
+<td><a href="https://inshikiroku2021.hatenablog.com/entry/2021/09/08/005712">https://inshikiroku2021.hatenablog.com/entry/2021/09/08/005712</a></td>
+</tr>
+<tr>
+<td>"2022, 1st exam" (posted Jan 2023)</td>
+<td>Japanese</td>
+<td>Which of six maps T(v), v = (v1, v2), is not linear: (v2, v1), (v1, v2), (0, v1), (0, 1), v1 - v2, v1 v2.</td>
+<td>Integral from 0 to pi/2 of cos x / (1 + sin^2 x).</td>
+<td>Writer says both are exercises in the set textbooks. 10 minutes.</td>
+<td><a href="https://note.com/ykn_shiro/n/n6ea20286aec7">https://note.com/ykn_shiro/n/n6ea20286aec7</a></td>
+</tr>
+<tr>
+<td>"2022, 1st exam" (posted Jan 2023)</td>
+<td>Japanese</td>
+<td>Find (x, y, z) under given conditions, then explain a condition (described vaguely on purpose).</td>
+<td>"An ordinary integral that looks like it is from the textbook".</td>
+<td></td>
+<td><a href="https://note.com/satoshi10958083/n/n55171f78eeb4">https://note.com/satoshi10958083/n/n55171f78eeb4</a></td>
+</tr>
+<tr>
+<td>2024 spring entry, 1st exam (Jul 2023)</td>
+<td>Japanese</td>
+<td>A Gram-Schmidt orthogonalization problem.</td>
+<td>A definite integral of x/(x + 1).</td>
+<td>Finished in under 10 minutes; the examiner ended early. Writer says projections and least squares are special to Strang's book and have been asked before. Also says the scope wording changed between 2022 and 2023, so check your year's guide.</td>
+<td><a href="https://f-tash.hatenablog.com/entry/2024/03/13/192355">https://f-tash.hatenablog.com/entry/2024/03/13/192355</a></td>
+</tr>
+<tr>
+<td>2024 spring entry, 1st exam (2023)</td>
+<td>Japanese</td>
+<td>A reflection matrix (2 parts, solved part 1 only).</td>
+<td>Solved fully, with corrections and guidance from the examiner.</td>
+<td></td>
+<td><a href="https://harurunppp.hatenablog.com/entry/2024/09/24/002533">https://harurunppp.hatenablog.com/entry/2024/09/24/002533</a></td>
+</tr>
+<tr>
+<td>2025 entry, 1st exam (Jul 2024)</td>
+<td>Japanese</td>
+<td>Positive definite matrix. Did not know the term, asked for a hint, then computed the rank and got partial credit.</td>
+<td>(not described)</td>
+<td>Two teachers, 10 minutes, any order. Writer's advice: ask for a hint early; the penalty is not big (writer's opinion).</td>
+<td><a href="https://note.com/engawast/n/na6a74084f4ca">https://note.com/engawast/n/na6a74084f4ca</a></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="32-older-in-person-format-before-2020">3.2 Older in-person format (before 2020)</h3>
+<ul>
+<li>2017 (in person): 10 minutes preview of 2 algebra and 2 analysis problems on paper, then choose. Algebra: eigenvalues of a 2 by 2 matrix; write a vector v in terms of x, y, z and decide if x, y, z are independent. Analysis: a limit with L'Hopital's rule; a tangent line. Source: <a href="https://kossoriwalking.hatenablog.com/entry/2017/07/17/135609">https://kossoriwalking.hatenablog.com/entry/2017/07/17/135609</a></li>
+<li>Exams in July 2016 (for 2017 entry), file by y-sira: convergence of the series sum (n^2 + 2)/(n^4 + 3n + 1); integral from 0 to pi of x sin x / (1 + cos^2 x); eigenvectors of [[alpha, 1],[0, alpha]] and its n-th power; if A^2 + 3A + 7E = O for a 2 by 2 matrix, find ad - bc and b + c. Source: <a href="https://github.com/tubutubucorn/naist-exam">https://github.com/tubutubucorn/naist-exam</a> (file NAIST数学問題y-sira.pdf)</li>
+<li>2017 exam (for 2018 entry), from students at open campus: an integral giving the mean and variance of the exponential distribution; y' and y'' for the implicit curve 2x^2 + 5y^2 = 6; rank of [[1,1,a],[1,a,1],[a,1,1]] depending on a. Source: same GitHub repo (NAIST数学問題&amp;解答2018入学者用.pdf).</li>
+<li>A collected list of 2003 to 2012 questions by a past student: <a href="https://www.shirayu.net/note/naist/data/exam.pdf">https://www.shirayu.net/note/naist/data/exam.pdf</a> (mirrored in the GitHub repo above). In that era the exam had <strong>three</strong> areas (linear algebra, analysis, probability) and you chose 2. Probability is <strong>not</strong> in today's scope. Repeating themes in that list:<ul>
+<li>Algebra: eigenvalues, diagonalization and A^n (many times); inverse matrices; matrix polynomial identities (Cayley-Hamilton style); orthogonal vectors and orthonormal bases; area of a triangle and volume of a tetrahedron from coordinates; a trace proof that AB - BA = E is impossible.</li>
+<li>Analysis: limits; many integrals by substitution and by parts (for example x^n log x, sin(log x), e^x sin x, (log x)^2); second-order linear ODEs with constant coefficients (2010); separable first-order ODEs (2011); series convergence; Maclaurin series of sin x; curve sketching (y = x e^-x).</li>
+</ul>
+</li>
+<li>One 2021 writer's summary of "frequent" topics (anecdotal): analysis = integrals, max/min, shape of graphs, convergence tests; algebra = eigenvalues/eigenvectors, rank, inverse matrices, Cayley-Hamilton. Source: <a href="https://note.com/dovedovepigeon/n/n35d806eaa4cf">https://note.com/dovedovepigeon/n/n35d806eaa4cf</a></li>
+</ul>
+<h3 id="33-patterns-i-see-across-the-accounts-my-summary">3.3 Patterns I see across the accounts (my summary)</h3>
+<ul>
+<li>Problems are short and standard. Most are textbook exercise level, often with parts (1) and (2).</li>
+<li>Examiners interact. They hint, correct signs, ask for your thinking, and accept a clear plan when time runs out.</li>
+<li>People lose points mostly on <strong>vocabulary</strong> (nullspace, positive definite) and on <strong>freezing</strong>, not on hard theory. Since your problems will be in English, learn Strang's exact English terms.</li>
+<li>Talking while writing is expected. Practise that out loud.</li>
+</ul>
+<hr />
+<h2 id="4-book-1-strang-introduction-to-linear-algebra-4th-ed-2009-chapters-1-to-7">4. Book 1: Strang, <em>Introduction to Linear Algebra</em>, 4th ed. (2009), Chapters 1 to 7</h2>
+<p><strong>Table of contents source (verified):</strong> Strang's own 4th edition website, archived 16 Jan 2013: <a href="https://web.archive.org/web/20130116213413/http://math.mit.edu/linearalgebra/">https://web.archive.org/web/20130116213413/http://math.mit.edu/linearalgebra/</a> . Cross-checked with the MIT OCW 18.06 readings table (<a href="https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/pages/readings/">https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/pages/readings/</a>), which gives 4th and 5th edition section numbers side by side.</p>
+<h3 id="41-4th-edition-vs-5th-edition-verified-from-the-ocw-readings-table">4.1 4th edition vs 5th edition (verified from the OCW readings table)</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>4th ed.</th>
+<th>5th ed.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chapters 1, 2, 4, 5</td>
+<td>same numbers</td>
+<td>same numbers</td>
+</tr>
+<tr>
+<td>Nullspace, rank and row reduced form</td>
+<td>3.2, 3.3</td>
+<td>3.2</td>
+</tr>
+<tr>
+<td>Complete solution to Ax = b</td>
+<td>3.4</td>
+<td>3.3</td>
+</tr>
+<tr>
+<td>Independence, basis, dimension</td>
+<td>3.5</td>
+<td>3.4</td>
+</tr>
+<tr>
+<td>Four fundamental subspaces</td>
+<td>3.6</td>
+<td>3.5</td>
+</tr>
+<tr>
+<td>Eigenvalues up to positive definite</td>
+<td>6.1 to 6.5</td>
+<td>6.1 to 6.5</td>
+</tr>
+<tr>
+<td>Similar matrices</td>
+<td>6.6</td>
+<td>6.2</td>
+</tr>
+<tr>
+<td>SVD</td>
+<td>6.7</td>
+<td>7.1 to 7.2 (5th ed. also adds 7.3 PCA and 7.4 geometry of the SVD)</td>
+</tr>
+<tr>
+<td>Linear transformations</td>
+<td>7.1 to 7.3</td>
+<td>8.1 to 8.3</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="42-where-to-study-main-free-resources-my-mapping">4.2 Where to study (main free resources, my mapping)</h3>
+<ul>
+<li><strong>MIT OCW 18.06SC Linear Algebra, Fall 2011</strong> (<a href="https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/">https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/</a>). Built for self-study. Each session has Strang's lecture video, a lecture summary, a recitation (problem solving) video by a TA, and problems with solutions. The syllabus gives readings in the 4th and 5th editions. Units: I "Ax = b and the Four Subspaces", II "Least Squares, Determinants and Eigenvalues", III "Positive Definite Matrices and Applications".</li>
+<li><strong>MIT OCW 18.06 Linear Algebra, Spring 2010</strong> (<a href="https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/">https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/</a>). Same Strang lectures (numbered Lecture 1 to 34), plus 10 problem sets <strong>taken from the 4th edition</strong> with solutions, and 3 exams plus a final with solutions.</li>
+<li><strong>Strang's own site</strong> (<a href="https://math.mit.edu/~gs/linearalgebra/ila5/indexila5.html">https://math.mit.edu/~gs/linearalgebra/ila5/indexila5.html</a> and .../ila6/indexila6.html): selected answers for the 4th-edition-style International Edition, the 5th edition solution manual, sample sections, and MIT 18.06 practice exams from 1997 to 2015.</li>
+<li><strong>3Blue1Brown, Essence of Linear Algebra</strong> (16 videos): <a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab">https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab</a> . Best for pictures. It does not cover projections, least squares or Gram-Schmidt.</li>
+</ul>
+<p>18.06 Spring 2010 problem sets map to 4th edition sections like this (verified from the assignments page): PS1 = 1.2, 1.3, 2.1 to 2.5. PS2 = 2.5 to 2.7, 3.1. PS3 = 3.2 to 3.4. PS4 = 3.5, 3.6. PS5 = 4.1, 4.2 (+ 8.2). PS6 = 4.3, 4.4, 5.1. PS7 = 5.2, 5.3, 6.1, 6.2. PS8 = 6.3, 6.4 (+ 8.3). PS9 = 6.5 (+ 8.1). PS10 = 6.6, 6.7 (+ 8.5). Exam coverage: Exam 1 = Ch. 1 to 3.4. Exam 2 = Ch. 1 to 5, 6.1, 6.2, 8.2. Exam 3 = Ch. 1 to 8 (8.1, 8.2, 8.3, 8.5). Chapter 8 is outside your scope.</p>
+<h3 id="43-chapter-by-chapter">4.3 Chapter by chapter</h3>
+<p>"Be able to" lines are my summary of what an oral examiner can ask. Section titles are verified.</p>
+<h4 id="chapter-1-introduction-to-vectors">Chapter 1. Introduction to Vectors</h4>
+<p>Sections: 1.1 Vectors and Linear Combinations. 1.2 Lengths and Dot Products. 1.3 Matrices.</p>
+<ul>
+<li>Be able to: combine vectors, compute dot products, lengths and angles, use the Schwarz and triangle inequalities, see Ax as a combination of the columns of A.</li>
+<li>Video: 18.06 Lecture 1 "The geometry of linear equations" (reading 1.1 to 2.1). 18.06SC Unit I sessions "The Geometry of Linear Equations" and "An Overview of Key Ideas".</li>
+<li>3Blue1Brown: Ch. 1 "Vectors", Ch. 2 "Linear combinations, span, and basis vectors", Ch. 9 "Dot products and duality".</li>
+<li>Read free: 5th ed. sample section 1.3 "Matrices" (downloaded).</li>
+<li>Practise: 18.06 PS1 (problems from 1.2, 1.3). Answers: ILA4 selected answers, Problem Sets 1.1 to 1.3.</li>
+</ul>
+<h4 id="chapter-2-solving-linear-equations">Chapter 2. Solving Linear Equations</h4>
+<p>Sections: 2.1 Vectors and Linear Equations. 2.2 The Idea of Elimination. 2.3 Elimination Using Matrices. 2.4 Rules for Matrix Operations. 2.5 Inverse Matrices. 2.6 Elimination = Factorization: A = LU. 2.7 Transposes and Permutations.</p>
+<ul>
+<li>Be able to: row and column pictures, elimination with pivots, when elimination breaks down, matrix multiplication four ways, inverses (Gauss-Jordan), A = LU, transposes, symmetric and permutation matrices.</li>
+<li>Video: 18.06 Lectures 2 "Elimination with matrices", 3 "Multiplication and inverse matrices", 4 "Factorization into A = LU", 5 "Transposes, permutations, spaces R^n". Same titles in 18.06SC Unit I.</li>
+<li>3Blue1Brown: Ch. 3 "Linear transformations and matrices", Ch. 4 "Matrix multiplication as composition", Ch. 7 "Inverse matrices, column space and null space".</li>
+<li>Read free: 5th ed. sample section 2.5 "Inverse Matrices" (downloaded).</li>
+<li>Practise: 18.06 PS1, PS2. Past NAIST: inverse of a 4 by 4 matrix; A^-1 = alpha A + beta E.</li>
+</ul>
+<h4 id="chapter-3-vector-spaces-and-subspaces">Chapter 3. Vector Spaces and Subspaces</h4>
+<p>Sections: 3.1 Spaces of Vectors. 3.2 The Nullspace of A: Solving Ax = 0. 3.3 The Rank and the Row Reduced Form. 3.4 The Complete Solution to Ax = b. 3.5 Independence, Basis and Dimension. 3.6 Dimensions of the Four Subspaces.</p>
+<ul>
+<li>Be able to: decide if a set is a subspace, find column space and nullspace, pivot and free variables, special solutions, rank, reduced row echelon form R, complete solution x = x_p + x_n, independence, basis, dimension, the four fundamental subspaces and their dimensions (r, n - r, r, m - r).</li>
+<li>Video: 18.06 Lectures 5 to 11: "Column space and nullspace", "Solving Ax = 0: pivot variables, special solutions", "Solving Ax = b: row reduced form R", "Independence, basis, and dimension", "The four fundamental subspaces", "Matrix spaces; rank 1; small world graphs". 18.06SC Unit I, then Exam 1.</li>
+<li>3Blue1Brown: Ch. 7, Ch. 8 "Nonsquare matrices as transformations between dimensions", Ch. 16 "Abstract vector spaces".</li>
+<li>Read free: 5th ed. sample section 3.5 "Dimensions of the Four Subspaces" (= 4th ed. 3.6, downloaded).</li>
+<li>Practise: 18.06 PS2 to PS4, 18.06 Exam 1, 18.06SC Exam 1. Past NAIST: nullspace (2021), rank of a 3 by 3 matrix (2017 with a parameter a, and 2021), independence (2017).</li>
+</ul>
+<h4 id="chapter-4-orthogonality">Chapter 4. Orthogonality</h4>
+<p>Sections: 4.1 Orthogonality of the Four Subspaces. 4.2 Projections. 4.3 Least Squares Approximations. 4.4 Orthogonal Bases and Gram-Schmidt.</p>
+<ul>
+<li>Be able to: show row space is orthogonal to nullspace, project onto a line and a subspace (P = A(A^T A)^-1 A^T), solve A^T A x = A^T b, fit a line by least squares, orthonormal columns (Q^T Q = I), run Gram-Schmidt, A = QR.</li>
+<li>Video: 18.06 Lectures 14 "Orthogonal vectors and subspaces", 15 "Projections onto subspaces", 16 "Projection matrices and least squares", 17 "Orthogonal matrices and Gram-Schmidt". Same in 18.06SC Unit II.</li>
+<li>3Blue1Brown: only Ch. 9 (dot products). For this chapter rely on Strang.</li>
+<li>Practise: 18.06 PS5, PS6. Past NAIST: Gram-Schmidt (2023), orthogonal basis (2021), orthonormal basis and a vector orthogonal to three given vectors (example list). One applicant says this chapter is special to Strang and has been asked (anecdotal).</li>
+</ul>
+<h4 id="chapter-5-determinants">Chapter 5. Determinants</h4>
+<p>Sections: 5.1 The Properties of Determinants. 5.2 Permutations and Cofactors. 5.3 Cramer's Rule, Inverses, and Volumes.</p>
+<ul>
+<li>Be able to: the 10 properties, det(AB) = det A det B, det(A^T) = det A, det(cA) = c^n det A, det(A^-1) = 1/det A, cofactor expansion, the "big formula", Cramer's rule, A^-1 = C^T/det A, area and volume as determinants.</li>
+<li>Video: 18.06 Lectures 18 "Properties of determinants", 19 "Determinant formulas and cofactors", 20 "Cramer's rule, inverse matrix, and volume". Same in 18.06SC Unit II.</li>
+<li>3Blue1Brown: Ch. 6 "The determinant", Ch. 12 "Cramer's rule, explained geometrically", Ch. 10 and 11 on cross products.</li>
+<li>Practise: 18.06 PS6, PS7, Exam 2. Past NAIST: det A = -1 then det A^2, det(-A), det(0.5A), det A^-1 (2022, English exam); triangle area and tetrahedron volume (2010).</li>
+</ul>
+<h4 id="chapter-6-eigenvalues-and-eigenvectors">Chapter 6. Eigenvalues and Eigenvectors</h4>
+<p>Sections: 6.1 Introduction to Eigenvalues. 6.2 Diagonalizing a Matrix. 6.3 Applications to Differential Equations. 6.4 Symmetric Matrices. 6.5 Positive Definite Matrices. 6.6 Similar Matrices. 6.7 Singular Value Decomposition (SVD).</p>
+<ul>
+<li>Be able to: det(A - lambda I) = 0, trace = sum of eigenvalues, det = product, diagonalize A = S Lambda S^-1, A^k = S Lambda^k S^-1, Markov-type limits, du/dt = Au and e^At, real eigenvalues and orthogonal eigenvectors of symmetric matrices, the tests for positive definiteness (pivots, eigenvalues, determinants, x^T A x &gt; 0), similar matrices and Jordan form idea, SVD A = U Sigma V^T.</li>
+<li>Video: 18.06 Lectures 21 "Eigenvalues and eigenvectors", 22 "Diagonalization and powers of A", 23 "Differential equations and exp(At)", 25 "Symmetric matrices and positive definiteness", 27 "Positive definite matrices and minima", 28 "Similar matrices and Jordan form", 29 "Singular value decomposition". Same in 18.06SC Units II and III.</li>
+<li>3Blue1Brown: Ch. 13 "Change of basis", Ch. 14 "Eigenvectors and eigenvalues", Ch. 15 "A quick trick for computing eigenvalues".</li>
+<li>Read free: 5th ed. sample section 6.1 "Introduction to Eigenvalues" and 7.1 (SVD) (downloaded).</li>
+<li>Practise: 18.06 PS7 to PS10, Exam 2, Exam 3. <strong>This is the most frequent algebra topic in every NAIST list</strong> (eigenvectors, A^n, diagonalization, A^infinity for a column-stochastic matrix, positive definite matrices in 2021 and 2024).</li>
+</ul>
+<h4 id="chapter-7-linear-transformations">Chapter 7. Linear Transformations</h4>
+<p>Sections: 7.1 The Idea of a Linear Transformation. 7.2 The Matrix of a Linear Transformation. 7.3 Diagonalization and the Pseudoinverse.</p>
+<ul>
+<li>Be able to: test linearity (T(cv + dw) = cT(v) + dT(w), so T(0) = 0), find the matrix of T in given bases, change of basis, rotations, projections and reflections as transformations, the pseudoinverse idea.</li>
+<li>Video: 18.06 Lectures 30 "Linear transformations and their matrices", 31 "Change of basis; image compression", 33 "Left and right inverses; pseudoinverse". Same in 18.06SC Unit III.</li>
+<li>3Blue1Brown: Ch. 3, Ch. 5 "Three-dimensional linear transformations", Ch. 13 "Change of basis".</li>
+<li>Practise: no 2010 problem set covers Chapter 7, so use the ILA4 selected answers (Problem Sets 7.1 to 7.3), 18.06 Exam 3 and the practice finals. Past NAIST: x to x + a is not linear (official example), "which T is not linear" (2022), reflection matrix (2023).</li>
+</ul>
+<hr />
+<h2 id="5-book-2-lang-a-first-course-in-calculus-5th-ed-springer-1986-chapters-1-to-15">5. Book 2: Lang, <em>A First Course in Calculus</em>, 5th ed. (Springer, 1986), Chapters 1 to 15</h2>
+<p><strong>Table of contents source (verified):</strong> the free front matter of the Springer edition (DOI 10.1007/978-1-4419-8532-3, read through the Springer link page). Chapter page ranges cross-checked with Crossref chapter records (DOIs ..._1 to ..._18). The book has 18 chapters; Chapter XV "Vectors" is the first chapter of Part Five "Functions of Several Variables", so it is <strong>inside</strong> your scope. Chapters XVI to XVIII are outside.</p>
+<p>Two notes from Lang's own preface (verified, front matter):</p>
+<ul>
+<li>"Chapters III through VIII make up an appropriate curriculum for one term (differentiation and elementary functions) while Chapters IX through XIII make up an appropriate curriculum for a second term (integration and Taylor's formula)."</li>
+<li>Lang puts exponentials and logarithms (Ch. VIII) <strong>before</strong> integration, and the ε and δ material is an appendix after Chapter XIV.</li>
+</ul>
+<p>Main free resources (my mapping):</p>
+<ul>
+<li><strong>OpenStax Calculus Volume 1, 2, 3</strong> (free, CC BY-NC-SA 4.0, downloaded). Vol. 1 = functions, limits, derivatives, applications, integration. Vol. 2 = integration again, techniques, differential equations, series, power series, parametric and polar. Vol. 3 = vectors in space (needed for Lang Ch. XV) and second-order ODEs (7.1).</li>
+<li><strong>MIT OCW 18.01SC Single Variable Calculus, Fall 2010</strong> (<a href="https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/">https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/</a>). Self-study course: lecture clips (Prof. David Jerison), notes, worked examples, recitation videos, problem sets with solutions, 4 exams and a final with solutions. Units: 1 Differentiation, 2 Applications of Differentiation, 3 The Definite Integral and its Applications, 4 Techniques of Integration, 5 Exploring the Infinite.</li>
+<li><strong>Strang, <em>Calculus</em>, 3rd ed.</strong> (free MIT OCW open textbook, <a href="https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/">https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/</a>, downloaded with chapter study guides). Good if you like Strang's style from the algebra book.</li>
+<li><strong>3Blue1Brown, Essence of Calculus</strong> (12 videos): <a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr">https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr</a></li>
+<li><strong>Paul's Online Math Notes</strong> (<a href="https://tutorial.math.lamar.edu/">https://tutorial.math.lamar.edu/</a>): many worked examples. PDF copy downloaded for private use.</li>
+<li>For Ch. XV: <strong>MIT OCW 18.02SC</strong> Unit 1 Part A "Vectors, Determinants and Planes": <a href="https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/pages/1.-vectors-and-matrices/part-a-vectors-determinants-and-planes/">https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/pages/1.-vectors-and-matrices/part-a-vectors-determinants-and-planes/</a></li>
+</ul>
+<p>OpenStax online links follow this pattern: <code>https://openstax.org/books/calculus-volume-1/pages/4-introduction</code> (chapter) or <code>.../pages/4-4-the-mean-value-theorem</code> (section). The PDFs in <a href="https://openstax.org/details/books/calculus-volume-1"><code>resources/02_Calculus_Lang/OpenStax/</code></a> are the same books.</p>
+<h3 id="51-chapter-by-chapter">5.1 Chapter by chapter</h3>
+<h4 id="chapter-i-numbers-and-functions-part-one-review-of-basic-material">Chapter I. Numbers and Functions (Part One: Review of Basic Material)</h4>
+<p>Sections: §1 Integers, Rational Numbers, and Real Numbers. §2 Inequalities. §3 Functions. §4 Powers.</p>
+<ul>
+<li>Be able to: solve inequalities with absolute values, domain of a function, rules for powers.</li>
+<li>OpenStax Vol. 1: 1.1 Review of Functions, 1.2 Basic Classes of Functions.</li>
+<li>Paul: Calculus I "Review" chapter (<a href="https://tutorial.math.lamar.edu/Classes/CalcI/ReviewIntro.aspx">https://tutorial.math.lamar.edu/Classes/CalcI/ReviewIntro.aspx</a>).</li>
+<li>Strang Calculus: Ch. 1.</li>
+</ul>
+<h4 id="chapter-ii-graphs-and-curves">Chapter II. Graphs and Curves</h4>
+<p>Sections: §1 Coordinates. §2 Graphs. §3 The Straight Line. §4 Distance Between Two Points. §5 Curves and Equations. §6 The Circle. §7 Dilations and the Ellipse. §8 The Parabola. §9 The Hyperbola.</p>
+<ul>
+<li>Be able to: equations of lines, circles, ellipses, parabolas, hyperbolas; complete the square; sketch them.</li>
+<li>OpenStax Vol. 1: 1.1, 1.2. Conics: Vol. 2, 7.5 Conic Sections (<a href="https://openstax.org/books/calculus-volume-2/pages/7-5-conic-sections">https://openstax.org/books/calculus-volume-2/pages/7-5-conic-sections</a>).</li>
+<li>Paul: "Common Graphs" (<a href="https://tutorial.math.lamar.edu/Classes/CalcI/CommonGraphs.aspx">https://tutorial.math.lamar.edu/Classes/CalcI/CommonGraphs.aspx</a>).</li>
+<li>Strang Calculus: 3.5 Parabolas, Ellipses, and Hyperbolas.</li>
+<li>Past NAIST: locus of points with a distance ratio (2007).</li>
+</ul>
+<h4 id="chapter-iii-the-derivative-part-two-differentiation-and-elementary-functions">Chapter III. The Derivative (Part Two: Differentiation and Elementary Functions)</h4>
+<p>Sections: §1 The Slope of a Curve. §2 The Derivative. §3 Limits. §4 Powers. §5 Sums, Products, and Quotients. §6 The Chain Rule. §7 Higher Derivatives. §8 Implicit Differentiation. §9 Rate of Change.</p>
+<ul>
+<li>Be able to: derivative from the definition (limit of the Newton quotient), product, quotient and chain rules, implicit differentiation, tangent lines, rates of change.</li>
+<li>OpenStax Vol. 1: Ch. 2 Limits (2.1 to 2.4), Ch. 3 Derivatives (3.1 to 3.4, 3.6 Chain Rule, 3.8 Implicit Differentiation), 4.1 Related Rates.</li>
+<li>MIT 18.01SC: Unit 1 Part A "Definition and Basic Rules", Part B "Implicit Differentiation and Inverse Functions".</li>
+<li>3Blue1Brown: Ch. 1 "The essence of calculus", 2 "The paradox of the derivative", 3 "Derivative formulas through geometry", 4 "Visualizing the chain rule and product rule", 6 "Implicit differentiation", 10 "Higher order derivatives".</li>
+<li>Paul: "Limits" and "Derivatives" chapters (<a href="https://tutorial.math.lamar.edu/Classes/CalcI/limitsIntro.aspx">https://tutorial.math.lamar.edu/Classes/CalcI/limitsIntro.aspx</a>, .../DerivativeIntro.aspx).</li>
+<li>Strang Calculus: 2.1 to 2.7, 4.1, 4.2.</li>
+<li>Past NAIST: tangent line to y = tan x at pi/6 (2021); y' and y'' for 2x^2 + 5y^2 = 6 (2017); tangent to y = x^3 (2010).</li>
+</ul>
+<h4 id="chapter-iv-sine-and-cosine">Chapter IV. Sine and Cosine</h4>
+<p>Sections: §0 Review of Radian Measure. §1 The Sine and Cosine Functions. §2 The Graphs. §3 Addition Formula. §4 The Derivatives. §5 Two Basic Limits. §6 Polar Coordinates.</p>
+<ul>
+<li>Be able to: radians, addition formulas (and double and triple angle from them), the limits sin x / x and (cos x - 1)/x as x goes to 0, derivatives of sin, cos, tan, polar coordinates.</li>
+<li>OpenStax Vol. 1: 1.3 Trigonometric Functions, 2.3 The Limit Laws (squeeze theorem and sin x / x), 3.5 Derivatives of Trigonometric Functions. Polar: Vol. 2, 7.3.</li>
+<li>MIT 18.01SC: Unit 1 Part A; polar in Unit 4 Part C.</li>
+<li>3Blue1Brown: Ch. 3 (includes the derivative of sine through geometry).</li>
+<li>Paul: "Derivatives of Trig Functions" (<a href="https://tutorial.math.lamar.edu/Classes/CalcI/DiffTrigFcns.aspx">https://tutorial.math.lamar.edu/Classes/CalcI/DiffTrigFcns.aspx</a>), "Polar Coordinates" (<a href="https://tutorial.math.lamar.edu/Classes/CalcII/PolarCoordinates.aspx">https://tutorial.math.lamar.edu/Classes/CalcII/PolarCoordinates.aspx</a>).</li>
+<li>Strang Calculus: 1.5 A Review of Trigonometry, 2.4 Derivative of the Sine and Cosine, 9.1, 9.2.</li>
+<li>Past NAIST: (1 - cos x)/x^2 (official example); f(x) = sin x / x (2022 English exam); triple-angle formula (2021); sin(x + y) = sin x + sin y as a locus (old list).</li>
+</ul>
+<h4 id="chapter-v-the-mean-value-theorem">Chapter V. The Mean Value Theorem</h4>
+<p>Sections: §1 The Maximum and Minimum Theorem. §2 Increasing and Decreasing Functions. §3 The Mean Value Theorem.</p>
+<ul>
+<li>Be able to: find critical points and max/min on an interval, state and use the mean value theorem, use f' &gt; 0 to show a function is increasing.</li>
+<li>OpenStax Vol. 1: 4.3 Maxima and Minima, 4.4 The Mean Value Theorem, 4.5 Derivatives and the Shape of a Graph.</li>
+<li>MIT 18.01SC: Unit 2 Part C "Mean Value Theorem, Antiderivatives and Differential Equations".</li>
+<li>Paul: "The Mean Value Theorem" (<a href="https://tutorial.math.lamar.edu/Classes/CalcI/MeanValueTheorem.aspx">https://tutorial.math.lamar.edu/Classes/CalcI/MeanValueTheorem.aspx</a>).</li>
+<li>Strang Calculus: 3.2, 3.8 The Mean Value Theorem and l'Hopital's Rule.</li>
+</ul>
+<h4 id="chapter-vi-sketching-curves">Chapter VI. Sketching Curves</h4>
+<p>Sections: §1 Behavior as x Becomes Very Large. §2 Bending Up and Down. §3 Cubic Polynomials. §4 Rational Functions. §5 Applied Maxima and Minima.</p>
+<ul>
+<li>Be able to: full curve sketch (domain, intercepts, asymptotes, sign of f' and f'', a table of increase and decrease), word problems on max/min.</li>
+<li>OpenStax Vol. 1: 4.5, 4.6 Limits at Infinity and Asymptotes, 4.7 Applied Optimization Problems.</li>
+<li>MIT 18.01SC: Unit 2 Part A "Approximation and Curve Sketching", Part B "Optimization, Related Rates and Newton's Method".</li>
+<li>Paul: "The Shape of a Graph, Part II" (<a href="https://tutorial.math.lamar.edu/Classes/CalcI/ShapeofGraphPtII.aspx">https://tutorial.math.lamar.edu/Classes/CalcI/ShapeofGraphPtII.aspx</a>), "Optimization" (<a href="https://tutorial.math.lamar.edu/Classes/CalcI/Optimization.aspx">https://tutorial.math.lamar.edu/Classes/CalcI/Optimization.aspx</a>).</li>
+<li>Strang Calculus: 3.2 to 3.4.</li>
+<li>Past NAIST: sketch a given curve (2021); sketch y = x e^-x (2011); minimum of a log expression (2011). In 2021 the examiner was satisfied once the writer described the table of increase and decrease (anecdotal).</li>
+</ul>
+<h4 id="chapter-vii-inverse-functions">Chapter VII. Inverse Functions</h4>
+<p>Sections: §1 Definition of Inverse Functions. §2 Derivative of Inverse Functions. §3 The Arcsine. §4 The Arctangent.</p>
+<ul>
+<li>Be able to: when an inverse exists, (f^-1)'(y) = 1/f'(x), derivatives of arcsin and arctan, integrals that give arctan.</li>
+<li>OpenStax Vol. 1: 1.4 Inverse Functions, 3.7 Derivatives of Inverse Functions, 5.7 Integrals Resulting in Inverse Trigonometric Functions.</li>
+<li>MIT 18.01SC: Unit 1 Part B.</li>
+<li>Paul: "Inverse Functions" (<a href="https://tutorial.math.lamar.edu/Classes/CalcI/InverseFunctions.aspx">https://tutorial.math.lamar.edu/Classes/CalcI/InverseFunctions.aspx</a>), "Derivatives of Inverse Trig Functions" (<a href="https://tutorial.math.lamar.edu/Classes/CalcI/DiffInvTrigFcns.aspx">https://tutorial.math.lamar.edu/Classes/CalcI/DiffInvTrigFcns.aspx</a>).</li>
+<li>Strang Calculus: 4.3, 4.4.</li>
+<li>Past NAIST: integral of cos x/(1 + sin^2 x) from 0 to pi/2 (2022) gives an arctan.</li>
+</ul>
+<h4 id="chapter-viii-exponents-and-logarithms">Chapter VIII. Exponents and Logarithms</h4>
+<p>Sections: §1 The Exponential Function. §2 The Logarithm. §3 The General Exponential Function. §4 Some Applications. §5 Order of Magnitude. §6 The Logarithm as the Area Under the Curve 1/x. Appendix: Systematic Proof of the Theory of Exponentials and Logarithms.</p>
+<ul>
+<li>Be able to: derivatives of e^x, log x, a^x, x^x (log differentiation), growth and decay (y' = Ky), compare growth rates (x^n / e^x goes to 0, log x / x goes to 0), log x as the area under 1/x.</li>
+<li>OpenStax Vol. 1: 1.5, 3.9, 6.7, 6.8 Exponential Growth and Decay. Vol. 2: 4.3 Separable Equations.</li>
+<li>MIT 18.01SC: Unit 1 Parts A and B (exponential and log sessions).</li>
+<li>3Blue1Brown: Ch. 5 "What's so special about Euler's number e?"</li>
+<li>Paul: "Derivatives of Exponential and Logarithm Functions" (<a href="https://tutorial.math.lamar.edu/Classes/CalcI/DiffExpLogFcns.aspx">https://tutorial.math.lamar.edu/Classes/CalcI/DiffExpLogFcns.aspx</a>).</li>
+<li>Strang Calculus: Ch. 6 (6.1 to 6.6).</li>
+</ul>
+<h4 id="chapter-ix-integration-part-three-integration">Chapter IX. Integration (Part Three: Integration)</h4>
+<p>Sections: §1 The Indefinite Integral. §2 Continuous Functions. §3 Area. §4 Upper and Lower Sums. §5 The Fundamental Theorem.</p>
+<ul>
+<li>Be able to: antiderivatives, define the integral with upper and lower sums, state and use the fundamental theorem.</li>
+<li>OpenStax Vol. 1: 4.10 Antiderivatives, 5.1 to 5.3.</li>
+<li>MIT 18.01SC: Unit 3 Part A "Definition of the Definite Integral and First Fundamental Theorem", Part B "Second Fundamental Theorem, Areas, Volumes".</li>
+<li>3Blue1Brown: Ch. 8 "Integration and the fundamental theorem of calculus", Ch. 9 "What does area have to do with slope?"</li>
+<li>Paul: "Integrals" chapter (<a href="https://tutorial.math.lamar.edu/Classes/CalcI/IntegralsIntro.aspx">https://tutorial.math.lamar.edu/Classes/CalcI/IntegralsIntro.aspx</a>).</li>
+<li>Strang Calculus: 5.1 to 5.7.</li>
+</ul>
+<h4 id="chapter-x-properties-of-the-integral">Chapter X. Properties of the Integral</h4>
+<p>Sections: §1 Further Connection with the Derivative. §2 Sums. §3 Inequalities. §4 Improper Integrals.</p>
+<ul>
+<li>Be able to: d/dx of an integral with a variable limit, Riemann sums, compare integrals, decide if an improper integral converges and compute it.</li>
+<li>OpenStax Vol. 1: 5.2 The Definite Integral (properties), 5.3. Vol. 2: 3.7 Improper Integrals.</li>
+<li>MIT 18.01SC: Unit 3 Part B; Unit 5 Part A "L'Hospital's Rule and Improper Integrals".</li>
+<li>Paul: "Improper Integrals" (<a href="https://tutorial.math.lamar.edu/Classes/CalcII/ImproperIntegrals.aspx">https://tutorial.math.lamar.edu/Classes/CalcII/ImproperIntegrals.aspx</a>).</li>
+<li>Strang Calculus: 5.6, 7.5.</li>
+<li>Past NAIST: Gamma function, Gamma(n) = (n - 1)! (2004); exponential distribution integrals (2017); Gaussian integral (2021).</li>
+</ul>
+<h4 id="chapter-xi-techniques-of-integration">Chapter XI. Techniques of Integration</h4>
+<p>Sections: §1 Substitution. §2 Integration by Parts. §3 Trigonometric Integrals. §4 Partial Fractions. §5 Exponential Substitutions.</p>
+<ul>
+<li>Be able to: choose the right method quickly, by parts twice (e^x sin x), partial fractions, powers of sin and cos.</li>
+<li>OpenStax Vol. 1: 5.5 to 5.7. Vol. 2: Ch. 3 (3.1 Integration by Parts, 3.2 Trigonometric Integrals, 3.3 Trigonometric Substitution, 3.4 Partial Fractions, 3.5 Other Strategies).</li>
+<li>MIT 18.01SC: Unit 4 Part A "Trigonometric Powers, Trigonometric Substitution and Completing the Square", Part B "Partial Fractions, Integration by Parts, Arc Length, and Surface Area".</li>
+<li>Paul: "Integration Techniques" (<a href="https://tutorial.math.lamar.edu/Classes/CalcII/IntTechIntro.aspx">https://tutorial.math.lamar.edu/Classes/CalcII/IntTechIntro.aspx</a>).</li>
+<li>Strang Calculus: 7.1 to 7.4.</li>
+<li>Past NAIST (the most common analysis type): x/(x + 1) (2023), x sin x/(1 + cos^2 x) (2016), x^n log x, sin(log x), e^x sin x, (log x)^2, x sqrt(1 - x^2) (2008 to 2011).</li>
+</ul>
+<h4 id="chapter-xii-applications-of-integration">Chapter XII. Applications of Integration</h4>
+<p>Sections: §1 Volumes of Revolution. §2 Area in Polar Coordinates. §3 Length of Curves. §4 Parametric Curves. §5 Surface of Revolution. §6 Work. §7 Moments and Center of Gravity.</p>
+<ul>
+<li>Be able to: set up and compute these integrals, especially area between curves, volumes and arc length.</li>
+<li>OpenStax Vol. 1: Ch. 6 (6.1 to 6.6). Vol. 2: 7.1, 7.2 (parametric), 7.4 Area and Arc Length in Polar Coordinates.</li>
+<li>MIT 18.01SC: Unit 3 Part B, Unit 4 Parts B and C.</li>
+<li>Paul: Calculus I "Applications of Integrals" (<a href="https://tutorial.math.lamar.edu/Classes/CalcI/IntAppsIntro.aspx">https://tutorial.math.lamar.edu/Classes/CalcI/IntAppsIntro.aspx</a>), Calculus II "Applications of Integrals" (<a href="https://tutorial.math.lamar.edu/Classes/CalcII/IntAppsIntro.aspx">https://tutorial.math.lamar.edu/Classes/CalcII/IntAppsIntro.aspx</a>) and "Parametric Equations and Polar Coordinates" (<a href="https://tutorial.math.lamar.edu/Classes/CalcII/ParametricIntro.aspx">https://tutorial.math.lamar.edu/Classes/CalcII/ParametricIntro.aspx</a>).</li>
+<li>Strang Calculus: 8.1 to 8.6, 9.3.</li>
+<li>Past NAIST: area between two curves (2009, 2010); "length of a curve" (reported in a note.com post).</li>
+</ul>
+<h4 id="chapter-xiii-taylors-formula-part-four-taylors-formula-and-series">Chapter XIII. Taylor's Formula (Part Four: Taylor's Formula and Series)</h4>
+<p>Sections: §1 Taylor's Formula. §2 Estimate for the Remainder. §3 Trigonometric Functions. §4 Exponential Function. §5 Logarithm. §6 The Arctangent. §7 The Binomial Expansion. §8 Some Limits.</p>
+<ul>
+<li>Be able to: write Taylor polynomials of sin, cos, e^x, log(1 + x), arctan, (1 + x)^a; bound the remainder; use them for limits like (1 - cos x)/x^2. Also L'Hopital's rule (in the books below; Lang's own section on it is not in this table of contents, so use Taylor or L'Hopital, whichever you explain better).</li>
+<li>OpenStax Vol. 2: 6.3 Taylor and Maclaurin Series, 6.4 Working with Taylor Series. Vol. 1: 4.8 L'Hopital's Rule.</li>
+<li>MIT 18.01SC: Unit 5 Part A (L'Hospital), Part B "Taylor Series".</li>
+<li>3Blue1Brown: Ch. 11 "Taylor series", Ch. 7 "Limits, L'Hopital's rule, and epsilon delta definitions".</li>
+<li>Paul: "Taylor Series" (<a href="https://tutorial.math.lamar.edu/Classes/CalcII/TaylorSeries.aspx">https://tutorial.math.lamar.edu/Classes/CalcII/TaylorSeries.aspx</a>), "L'Hospital's Rule" (<a href="https://tutorial.math.lamar.edu/Classes/CalcI/LHospitalsRule.aspx">https://tutorial.math.lamar.edu/Classes/CalcI/LHospitalsRule.aspx</a>).</li>
+<li>Strang Calculus: 10.4, 3.8.</li>
+<li>Past NAIST: Maclaurin series of sin x (2011); limit of ((3^x + 5^x)/2)^(1/x) (2012); L'Hopital limit (2017).</li>
+</ul>
+<h4 id="chapter-xiv-series">Chapter XIV. Series</h4>
+<p>Sections: §1 Convergent Series. §2 Series with Positive Terms. §3 The Ratio Test. §4 The Integral Test. §5 Absolute and Alternating Convergence. §6 Power Series. §7 Differentiation and Integration of Power Series.</p>
+<ul>
+<li>Be able to: geometric series, comparison with sum 1/n^p, ratio and integral tests, alternating series, radius of convergence, differentiate and integrate power series term by term.</li>
+<li>OpenStax Vol. 2: Ch. 5 (5.2 to 5.6), Ch. 6 (6.1, 6.2).</li>
+<li>MIT 18.01SC: Unit 5 Part B.</li>
+<li>Paul: "Series &amp; Sequences" (<a href="https://tutorial.math.lamar.edu/Classes/CalcII/SeriesIntro.aspx">https://tutorial.math.lamar.edu/Classes/CalcII/SeriesIntro.aspx</a>).</li>
+<li>Strang Calculus: 10.1 to 10.5.</li>
+<li>Past NAIST: convergence of sum (n^2 + 2)/(n^4 + 3n + 1) (2016); a_n = sqrt(n + 1) - sqrt(n) goes to 0 but its sum diverges (2012).</li>
+</ul>
+<h4 id="appendix-and-between-chapters-xiv-and-xv">Appendix. ε and δ (between Chapters XIV and XV)</h4>
+<p>Sections: §1 Least Upper Bound. §2 Limits. §3 Points of Accumulation. §4 Continuous Functions.</p>
+<ul>
+<li>Not a numbered chapter, so probably not a main target. Know the epsilon-delta definition of a limit and of continuity, in case of a follow-up question.</li>
+<li>OpenStax Vol. 1: 2.5 The Precise Definition of a Limit. Paul: "The Definition of the Limit" (<a href="https://tutorial.math.lamar.edu/Classes/CalcI/DefnOfLimit.aspx">https://tutorial.math.lamar.edu/Classes/CalcI/DefnOfLimit.aspx</a>). 3Blue1Brown Calculus Ch. 7.</li>
+</ul>
+<h4 id="chapter-xv-vectors-part-five-functions-of-several-variables">Chapter XV. Vectors (Part Five: Functions of Several Variables)</h4>
+<p>Sections: §1 Definition of Points in Space. §2 Located Vectors. §3 Scalar Product. §4 The Norm of a Vector. §5 Parametric Lines. §6 Planes.</p>
+<ul>
+<li>Be able to: vectors in n-space, dot product, norm, angle, projection of one vector on another, parametric line through two points, equation of a plane from a point and a normal vector, distance from a point to a plane. Lang's chapter has no cross product section, but the cross product helps for areas and normals.</li>
+<li>OpenStax Vol. 3: Ch. 2 Vectors in Space (2.1 to 2.5), <a href="https://openstax.org/books/calculus-volume-3/pages/2-introduction">https://openstax.org/books/calculus-volume-3/pages/2-introduction</a></li>
+<li>MIT 18.02SC: Unit 1 Part A "Vectors, Determinants and Planes" (link above).</li>
+<li>3Blue1Brown: Linear Algebra Ch. 1 and Ch. 9.</li>
+<li>Paul: "Vectors" (<a href="https://tutorial.math.lamar.edu/Classes/CalcII/VectorsIntro.aspx">https://tutorial.math.lamar.edu/Classes/CalcII/VectorsIntro.aspx</a>), "Equations of Lines" (<a href="https://tutorial.math.lamar.edu/Classes/CalcII/EqnsOfLines.aspx">https://tutorial.math.lamar.edu/Classes/CalcII/EqnsOfLines.aspx</a>), "Equations of Planes" (<a href="https://tutorial.math.lamar.edu/Classes/CalcII/EqnsOfPlanes.aspx">https://tutorial.math.lamar.edu/Classes/CalcII/EqnsOfPlanes.aspx</a>).</li>
+<li>Strang Calculus: 11.1 Vectors and Dot Products, 11.2 Planes and Projections. This overlaps a lot with Strang ILA Chapter 1, so you study it once for both books.</li>
+<li>Past NAIST: angle between two vectors and a vector orthogonal to both (2012); tetrahedron (2010).</li>
+</ul>
+<h4 id="extra-outside-the-chapter-titles-differential-equations">Extra (outside the chapter titles): differential equations</h4>
+<ul>
+<li>Why: the official example has f'' + 2f' - 3f = 0 with initial conditions, and old exams had second-order (2010) and separable first-order (2011) equations.</li>
+<li>Be able to: solve y' = Ky, separable equations, and ay'' + by' + cy = 0 with the characteristic equation (real distinct roots, repeated root, complex roots), then fit initial conditions.</li>
+<li>OpenStax Vol. 2: 4.3 Separable Equations. OpenStax Vol. 3: 7.1 Second-Order Linear Equations (<a href="https://openstax.org/books/calculus-volume-3/pages/7-1-second-order-linear-equations">https://openstax.org/books/calculus-volume-3/pages/7-1-second-order-linear-equations</a>).</li>
+<li>Strang ILA 6.3 Applications to Differential Equations (du/dt = Au with eigenvalues; a second-order equation can be written as such a system).</li>
+<li>Paul: "Second Order DE's" (<a href="https://tutorial.math.lamar.edu/Classes/DE/IntroSecondOrder.aspx">https://tutorial.math.lamar.edu/Classes/DE/IntroSecondOrder.aspx</a>).</li>
+</ul>
+<hr />
+<h2 id="6-what-i-downloaded-all-legal">6. What I downloaded (all legal)</h2>
+<p>Total about 535 MB, in <code>05_Math/resources/</code>.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Folder / file</th>
+<th>What it is</th>
+<th>Why it is legal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://isw3.naist.jp/IS/nyushi/faq/examquestions_e.pdf"><code>00_NAIST_official/NAIST_math_example_questions_EN.pdf</code></a> and <code>_JA.pdf</code></td>
+<td>Official example questions (section 2)</td>
+<td>Published by NAIST on isw3.naist.jp</td>
+</tr>
+<tr>
+<td><a href="https://isw3.naist.jp/Admission/img/nyushi/online-math-exam-guideline_en.mp4"><code>00_NAIST_official/NAIST_online_math_exam_guideline_EN.mp4</code></a></td>
+<td>Official 3.6 minute guideline video for the online math exam</td>
+<td>Linked by NAIST for applicants</td>
+</tr>
+<tr>
+<td><a href="https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/"><code>01_Linear_Algebra_Strang/MIT_OCW_18.06SC_Fall2011/MIT_OCW_18.06SC_full_course_offline.zip</code></a></td>
+<td>Whole 18.06SC course (notes, problems, solutions) for offline use</td>
+<td>MIT OCW, CC BY-NC-SA 4.0, official "Download course" file</td>
+</tr>
+<tr>
+<td><a href="https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/"><code>01_Linear_Algebra_Strang/MIT_OCW_18.06SC_Fall2011/exams_with_solutions/</code></a></td>
+<td>18.06SC Exam 1 to 3 and Final, each with solutions</td>
+<td>MIT OCW, CC BY-NC-SA 4.0</td>
+</tr>
+<tr>
+<td><a href="https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/"><code>01_Linear_Algebra_Strang/MIT_OCW_18.06_Spring2010/MIT_OCW_18.06_Spring2010_full_course_offline.zip</code></a></td>
+<td>Whole 18.06 Spring 2010 course</td>
+<td>MIT OCW, CC BY-NC-SA 4.0</td>
+</tr>
+<tr>
+<td><a href="https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/"><code>01_Linear_Algebra_Strang/MIT_OCW_18.06_Spring2010/exams_with_solutions/</code></a></td>
+<td>Exam 1 to 3 and Final with solutions</td>
+<td>MIT OCW, CC BY-NC-SA 4.0</td>
+</tr>
+<tr>
+<td><a href="https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/"><code>01_Linear_Algebra_Strang/MIT_OCW_18.06_Spring2010/problem_set_solutions/</code></a></td>
+<td>PS1 to PS10 solutions (problems are numbered from the 4th edition)</td>
+<td>MIT OCW, CC BY-NC-SA 4.0</td>
+</tr>
+<tr>
+<td><code>01_Linear_Algebra_Strang/Strang_official_site/ILA4_answers_to_selected_questions.pdf</code></td>
+<td>"Solutions to Selected Exercises", International Edition (2019), 39 pages. Its problem sets run 1.1 to 10.3 with the 4th edition section layout (3.1 to 3.6, 6.1 to 6.7, 7.1 to 7.3). Problem numbers probably match the 4th edition, but I have not checked against a printed copy.</td>
+<td>Free download on Strang's site</td>
+</tr>
+<tr>
+<td><a href="https://math.mit.edu/~gs/linearalgebra/ila5/indexila5.html"><code>01_Linear_Algebra_Strang/Strang_official_site/ILA5_solution_manual_Nov2023.pdf</code></a></td>
+<td>5th edition solution manual (187 pages). Only useful if you work from the 5th edition.</td>
+<td>Free download on Strang's site</td>
+</tr>
+<tr>
+<td><a href="https://math.mit.edu/~gs/linearalgebra/ila5/indexila5.html"><code>01_Linear_Algebra_Strang/Strang_official_site/ILA5_sample_sections/</code></a></td>
+<td>5th ed. table of contents, preface, sections 1.3, 2.5, 3.5, 6.1, 7.1, "Six Great Theorems"</td>
+<td>Free download on Strang's site</td>
+</tr>
+<tr>
+<td><a href="https://math.mit.edu/~gs/linearalgebra/ila5/indexila5.html"><code>01_Linear_Algebra_Strang/Strang_official_site/MIT_18.06_practice_exams/</code></a></td>
+<td>Collections of past MIT 18.06 exams 1997 to 2015 (Exam 1, 2, 3, Final; many with solutions)</td>
+<td>Free download on Strang's site</td>
+</tr>
+<tr>
+<td><a href="https://openstax.org/details/books/calculus-volume-1"><code>02_Calculus_Lang/OpenStax/OpenStax_Calculus_Volume_1.pdf</code></a>, <code>_2.pdf</code>, <code>_3.pdf</code></td>
+<td>Full textbooks (769, 737, 913 pages)</td>
+<td>OpenStax, CC BY-NC-SA 4.0</td>
+</tr>
+<tr>
+<td><a href="https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/"><code>02_Calculus_Lang/MIT_OCW_18.01SC_Fall2010/MIT_OCW_18.01SC_full_course_offline.zip</code></a></td>
+<td>Whole 18.01SC course</td>
+<td>MIT OCW, CC BY-NC-SA 4.0</td>
+</tr>
+<tr>
+<td><a href="https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/"><code>02_Calculus_Lang/MIT_OCW_18.01SC_Fall2010/exams_with_solutions/</code></a></td>
+<td>Exam 1 to 4 and Final with solutions</td>
+<td>MIT OCW, CC BY-NC-SA 4.0</td>
+</tr>
+<tr>
+<td><a href="https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/"><code>02_Calculus_Lang/Strang_Calculus_OCW/Strang_Calculus_3rd_ed_full_book.pdf</code></a> and <code>study_guides/</code> (Ch. 1 to 11)</td>
+<td>Strang's free calculus textbook and study guides</td>
+<td>MIT OCW open textbook (RES.18-001)</td>
+</tr>
+<tr>
+<td><a href="https://tutorial.math.lamar.edu/"><code>02_Calculus_Lang/Pauls_Online_Notes_private_use_only/</code></a></td>
+<td>Paul's Notes: full calculus notes, practice problems, solutions</td>
+<td>Site terms allow "a copy of the content of this site for your private, non-commercial use" with notices kept. <strong>Do not share these files.</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>How to use the OCW zip files: unzip each one into its own new folder and open <code>index.html</code> in a browser. The zips are small (24 to 145 MB), so the lecture videos are probably not inside. Watch the videos online.</p>
+<p>Not downloaded, on purpose:</p>
+<ul>
+<li><strong>The two textbooks.</strong> They are copyrighted and there is no legal free PDF. Some Japanese blogs link to free PDFs of the set books. Do not use those. My plan: I start with the free resources in this folder, because the study plan works without the books, and I buy the Indian edition of Strang only if the free material is not enough. Strang's site says an Indian edition of <em>Introduction to Linear Algebra</em> is sold by Wellesley Publishers (India) (it lists the 5th edition ISBN 978-09802327-7-6). With the 5th edition, study Chapters 1 to 8 (table in 4.1).</li>
+<li><strong>YouTube videos</strong> (3Blue1Brown, OCW lectures). Watch online.</li>
+<li><strong>Student-made past-question files</strong> (GitHub, blogs). No license, so only linked.</li>
+<li><strong>Strang's 4th edition sample sections</strong> (1.3, 2.5, 3.6, 4.3, 6.1). They were free on his old 4th edition site, which now exists only in the Internet Archive: <a href="https://web.archive.org/web/20130116213413/http://math.mit.edu/linearalgebra/">https://web.archive.org/web/20130116213413/http://math.mit.edu/linearalgebra/</a> . You can read them there.</li>
+</ul>
+<hr />
+<h2 id="7-how-i-would-use-this-my-suggestion-adjust-to-your-time">7. How I would use this (my suggestion, adjust to your time)</h2>
+<ul>
+<li>Time next to my full-time job: about 75 minutes on weekdays and 2.5 hours on Saturday and Sunday for the first 14 days, then about 5 hours a week, and more after I leave Layerpath. The 14 days start on Tue 27 Oct 2026, the day after the lab interview.</li>
+<li>My university maths: at VTU, probability and basic statistical inference were part of my third-semester course Mathematics for Computer Science (BCS301): probability distributions, sampling, hypothesis tests such as the t-test and chi-square test, and basic ANOVA. I have not taken a full statistics course. For Strang and Lang, I rate my confidence in each chapter with the cold baseline on Day 1 and the self-check table below, and I shorten or lengthen days from that.</li>
+<li>Order for algebra: 18.06SC Unit I, II, III in order, with the matching Strang 4th ed. section. After each chapter do the 18.06 Spring 2010 problem set, then one old exam.</li>
+<li>Order for analysis: Lang chapters in order, using OpenStax for reading and Paul for extra examples. Do the 18.01SC exams as checkpoints.</li>
+<li>From the start, practise the <strong>exam style</strong>: take one problem, start a 5-minute timer, write on an A4 sketchbook with a thick pen, and <strong>say every step out loud in English</strong>. Record yourself on video once a week and check that the writing is readable on camera.</li>
+<li>Learn Strang's exact words (nullspace, column space, pivot, special solution, rank, projection, positive definite, similar, linear transformation). Several Japanese applicants lost time on words, not on math.</li>
+<li>If you are stuck in the exam: say what you know, say your plan, and ask "Could I have a small hint?" Applicants report this gets partial credit (anecdotal).</li>
+</ul>
+<p>Self-check table (fill in as you go):</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Chapter</th>
+<th>Read</th>
+<th>Problems done</th>
+<th>Can explain out loud in 5 min</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Strang 1 Vectors</td>
+<td>[ ]</td>
+<td>[ ]</td>
+<td>[ ]</td>
+</tr>
+<tr>
+<td>Strang 2 Linear equations</td>
+<td>[ ]</td>
+<td>[ ]</td>
+<td>[ ]</td>
+</tr>
+<tr>
+<td>Strang 3 Vector spaces</td>
+<td>[ ]</td>
+<td>[ ]</td>
+<td>[ ]</td>
+</tr>
+<tr>
+<td>Strang 4 Orthogonality</td>
+<td>[ ]</td>
+<td>[ ]</td>
+<td>[ ]</td>
+</tr>
+<tr>
+<td>Strang 5 Determinants</td>
+<td>[ ]</td>
+<td>[ ]</td>
+<td>[ ]</td>
+</tr>
+<tr>
+<td>Strang 6 Eigenvalues</td>
+<td>[ ]</td>
+<td>[ ]</td>
+<td>[ ]</td>
+</tr>
+<tr>
+<td>Strang 7 Linear transformations</td>
+<td>[ ]</td>
+<td>[ ]</td>
+<td>[ ]</td>
+</tr>
+<tr>
+<td>Lang I to II Review</td>
+<td>[ ]</td>
+<td>[ ]</td>
+<td>[ ]</td>
+</tr>
+<tr>
+<td>Lang III to VIII Differentiation</td>
+<td>[ ]</td>
+<td>[ ]</td>
+<td>[ ]</td>
+</tr>
+<tr>
+<td>Lang IX to XII Integration</td>
+<td>[ ]</td>
+<td>[ ]</td>
+<td>[ ]</td>
+</tr>
+<tr>
+<td>Lang XIII to XIV Taylor and series</td>
+<td>[ ]</td>
+<td>[ ]</td>
+<td>[ ]</td>
+</tr>
+<tr>
+<td>Lang XV Vectors</td>
+<td>[ ]</td>
+<td>[ ]</td>
+<td>[ ]</td>
+</tr>
+<tr>
+<td>Extra: differential equations</td>
+<td>[ ]</td>
+<td>[ ]</td>
+<td>[ ]</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="8-uncertainties">8. Uncertainties</h2>
+<ul>
+<li>Total interview length in 2027 (20 minutes in the Guide) vs the 2022 page (about 30 minutes, 12 for math). How long the math part will be in 2027 is not stated.</li>
+<li>Whether the guideline video audio says anything not on the slides. I could only read the slides.</li>
+<li>Whether the ILA International Edition answers use exactly the 4th edition problem numbers.</li>
+<li>All past questions in section 3 are from memory of applicants and may be slightly wrong. The 2017 exponential distribution question shows "λe^(λx)" in the student file, which is probably a typo for λe^(-λx).</li>
+<li>Lang's 5th edition table of contents has no separate L'Hopital section. I mapped L'Hopital to Chapter XIII (limits by Taylor's formula) and the MVT chapter. It may sit inside a section I cannot see without the book.</li>
+</ul>
+<hr />
+<h2 id="9-sources">9. Sources</h2>
+<p>Official (verified):</p>
+<ul>
+<li>2027 Master's Admission Guide: <code>../01_Your_Documents/NAIST_official/NAIST_2027_Masters_Admission_Guide.pdf</code> (pages on "Information Science", "[Scope of mathematics questions]")</li>
+<li>Division exam page, English: <a href="https://isw3.naist.jp/Admission/exam-en.html">https://isw3.naist.jp/Admission/exam-en.html</a></li>
+<li>Division exam page, Japanese: <a href="https://isw3.naist.jp/Admission/exam-ja.html">https://isw3.naist.jp/Admission/exam-ja.html</a></li>
+<li>Admission Q&amp;A, English: <a href="https://isw3.naist.jp/Admission/nyushiQ_A-en.html">https://isw3.naist.jp/Admission/nyushiQ_A-en.html</a></li>
+<li>Admission Q&amp;A, Japanese: <a href="https://isw3.naist.jp/Admission/nyushiQ_A-ja.html">https://isw3.naist.jp/Admission/nyushiQ_A-ja.html</a></li>
+<li>Older page (Apr 2021): <a href="https://isw3.naist.jp/IS/nyushi/exam-e.html">https://isw3.naist.jp/IS/nyushi/exam-e.html</a></li>
+<li>Example questions: <a href="http://isw3.naist.jp/IS/nyushi/faq/examquestions_e.pdf">http://isw3.naist.jp/IS/nyushi/faq/examquestions_e.pdf</a> and <a href="http://isw3.naist.jp/IS/nyushi/faq/examquestions.pdf">http://isw3.naist.jp/IS/nyushi/faq/examquestions.pdf</a></li>
+<li>Guideline video: <a href="https://isw3.naist.jp/Admission/img/nyushi/online-math-exam-guideline_en.mp4">https://isw3.naist.jp/Admission/img/nyushi/online-math-exam-guideline_en.mp4</a></li>
+</ul>
+<p>Textbook contents (verified):</p>
+<ul>
+<li>Strang 4th edition site (archived): <a href="https://web.archive.org/web/20130116213413/http://math.mit.edu/linearalgebra/">https://web.archive.org/web/20130116213413/http://math.mit.edu/linearalgebra/</a></li>
+<li>Strang 5th and 6th edition sites: <a href="https://math.mit.edu/~gs/linearalgebra/ila5/indexila5.html">https://math.mit.edu/~gs/linearalgebra/ila5/indexila5.html</a> , <a href="https://math.mit.edu/~gs/linearalgebra/ila6/indexila6.html">https://math.mit.edu/~gs/linearalgebra/ila6/indexila6.html</a></li>
+<li>Lang 5th edition, Springer: <a href="https://link.springer.com/book/10.1007/978-1-4419-8532-3">https://link.springer.com/book/10.1007/978-1-4419-8532-3</a> (front matter with contents is free); chapter records via Crossref, DOIs 10.1007/978-1-4419-8532-3_1 to _18</li>
+</ul>
+<p>Free courses and books:</p>
+<ul>
+<li>MIT OCW 18.06 Spring 2010: <a href="https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/">https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/</a> (readings, video lectures, assignments, exams pages)</li>
+<li>MIT OCW 18.06SC Fall 2011: <a href="https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/">https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/</a></li>
+<li>MIT OCW 18.01SC Fall 2010: <a href="https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/">https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/</a></li>
+<li>MIT OCW 18.02SC Fall 2010 (vectors): <a href="https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/">https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/</a></li>
+<li>Strang, Calculus (OCW RES.18-001): <a href="https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/">https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/</a> ; Strang's "Highlights of Calculus" videos: <a href="https://ocw.mit.edu/courses/res-18-005-highlights-of-calculus-spring-2010/">https://ocw.mit.edu/courses/res-18-005-highlights-of-calculus-spring-2010/</a></li>
+<li>OpenStax Calculus: <a href="https://openstax.org/details/books/calculus-volume-1">https://openstax.org/details/books/calculus-volume-1</a> , <a href="https://openstax.org/details/books/calculus-volume-2">https://openstax.org/details/books/calculus-volume-2</a> , <a href="https://openstax.org/details/books/calculus-volume-3">https://openstax.org/details/books/calculus-volume-3</a></li>
+<li>3Blue1Brown playlists: <a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab">https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab</a> , <a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr">https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr</a></li>
+<li>Paul's Online Math Notes and terms: <a href="https://tutorial.math.lamar.edu/">https://tutorial.math.lamar.edu/</a> , <a href="https://tutorial.math.lamar.edu/Terms.aspx">https://tutorial.math.lamar.edu/Terms.aspx</a></li>
+</ul>
+<p>Applicant accounts (anecdotal): the blog and GitHub links in section 3.</p>
+</article>
+<div class="donebox"><label><input type="checkbox" class="done-cb" data-ch="ch30"> Mark chapter 30 as done</label></div>
+<nav class="pager" aria-label="Previous and next"><a class="prev" href="ch29.html"><span class="lbl">← Previous</span>29. Intel report</a><a class="next" href="contents.html"><span class="lbl">The end</span>Back to contents</a></nav>
+</main>
+</div>
+<script>
+(function(){
+ var KEY='studybook-done-v1';
+ function load(){try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return {}}}
+ function save(d){try{localStorage.setItem(KEY,JSON.stringify(d))}catch(e){}}
+ function refresh(){
+  var d=load();
+  document.querySelectorAll('[data-ch]').forEach(function(el){el.classList.toggle('done',!!d[el.getAttribute('data-ch')])});
+  document.querySelectorAll('input.done-cb').forEach(function(cb){cb.checked=!!d[cb.getAttribute('data-ch')]});
+  var p=document.getElementById('progress');
+  if(p&&window.BOOK){
+   var total=BOOK.chapters.length,done=BOOK.chapters.filter(function(c){return d[c.id]}).length;
+   p.querySelector('.count').textContent=done+' of '+total+' chapters done';
+   p.querySelector('.bar span').style.width=(100*done/total)+'%';
+   var ul=p.querySelector('.parts-progress');ul.innerHTML='';
+   BOOK.parts.forEach(function(pt){
+    var cs=BOOK.chapters.filter(function(c){return c.part===pt.n});
+    var dn=cs.filter(function(c){return d[c.id]}).length;
+    var nextc=cs.filter(function(c){return !d[c.id]})[0];
+    var li=document.createElement('li');
+    li.textContent=pt.name+': '+dn+' of '+cs.length;
+    if(nextc){li.appendChild(document.createTextNode(' · next: '));var a=document.createElement('a');a.href=nextc.file;a.textContent=nextc.title;li.appendChild(a)}
+    else{li.appendChild(document.createTextNode(' ✓'))}
+    ul.appendChild(li);
+   });
+  }
+ }
+ document.querySelectorAll('input.done-cb').forEach(function(cb){
+  cb.addEventListener('change',function(){var d=load(),id=cb.getAttribute('data-ch');if(cb.checked){d[id]=1}else{delete d[id]}save(d);refresh()});
+ });
+ var btn=document.querySelector('.menu-btn');
+ if(btn){btn.addEventListener('click',function(){var o=document.body.classList.toggle('nav-open');btn.setAttribute('aria-expanded',o?'true':'false')})}
+ refresh();
+})();
+</script>
+</body>
+</html>

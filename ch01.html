@@ -147,7 +147,7 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 <p><strong>Files in this folder:</strong></p>
 <ul>
 <li><code>Sudhanshu_Pandit_SDlab_interview.pdf</code>: <strong>present this one.</strong> It looks exactly as checked, on any computer.</li>
-<li><code>Sudhanshu_Pandit_SDlab_interview.pptx</code>: the editable deck, with the script in the speaker notes.</li>
+<li><code>Sudhanshu_Pandit_SDlab_interview.pptx</code>: the editable deck. Its speaker notes still have the older, formal wording, so use <a href="ch02.html"><code>FULL_SCRIPT.md</code></a> instead.</li>
 </ul>
 <p>The deck was checked in two rounds. Round 1: five independent reviewers (a fact-checker against the papers, a visual designer, a "Dr. Reid" reader, a "Dr. Ji" reader and an interview coach), each followed by a skeptic who tried to disprove every finding. Round 2: a fresh fact, visual and interviewer check of the fixed deck and of the answers below. The claims on the slides were checked against your proposal and the paper PDFs.</p>
 <hr />
@@ -155,7 +155,7 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 <ol>
 <li>Before the call, open the PDF in <strong>Preview</strong>. Close other apps and turn on Do Not Disturb.</li>
 <li>Join the Meet at <strong>10:25 IST</strong>. Camera on. Greet them first, without sharing.</li>
-<li>When they ask you to introduce yourself, say: <strong>"I prepared seven short slides, about five minutes. May I share my screen?"</strong></li>
+<li>When they ask you to introduce yourself, say: <strong>"I made seven short slides, about six minutes. Can I share my screen?"</strong></li>
 <li>In Meet: <strong>Present now</strong> (the screen share button) → <strong>A window</strong> → choose the Preview window. Then in Preview press <strong>Cmd + Shift + F</strong> (View → Slideshow) and use the arrow keys.</li>
 <li>Keep the script on your phone or printed on paper beside the camera, not on the shared screen.</li>
 <li>After slide 7, <strong>stop sharing</strong> so they see your face for the questions.</li>
@@ -163,37 +163,9 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 </ol>
 <p>Alternative: upload the .pptx to Google Drive, open it with Google Slides, and use <strong>Present → Presenter view</strong> (it shows the notes in a separate window), then share that tab in Meet. Check the slides once in Google Slides first, because fonts can shift slightly.</p>
 <hr />
-<h2 id="2-the-script-about-5-to-55-minutes">2. The script (about 5 to 5.5 minutes)</h2>
-<p>Speak slowly. Look at the camera, not the slide. Do not read word for word: know the points, and use these sentences as your guide.</p>
-<p><strong>Slide 1. Title</strong> (about 30 seconds (65 words))</p>
-<blockquote>
-<p>Thank you, Dr. Ji and Dr. Reid, for meeting me today. My name is Sudhanshu Pandit. My question is: which rules in a file like this CLAUDE.md do coding agents actually follow? For example, if it says put new tests in the tests folder, does the agent do it? And does keeping a rule change the quality of its code? First, a little about me.</p>
-</blockquote>
-<p><strong>Slide 2. About me</strong> (about 35 seconds (78 words))</p>
-<blockquote>
-<p>I finished my B.E. in Computer Science and Engineering at VTU in May 2026, and worked in software engineering roles during my studies. Since November 2025 I have been an AI engineer on the founding team at Layerpath, where I build systems on top of large language models. I also build Yuki, a desktop AI agent for Mac and Windows. I use Claude Code and Codex every day and maintain their context files. My question comes from BrandMemory.</p>
-</blockquote>
-<p><strong>Slide 3. Where my question comes from</strong> (about 55 seconds (121 words))</p>
-<blockquote>
-<p>BrandMemory takes a company's writing rules from its website and gives them to a model as context. When I measured the output, some rules had no effect. Some never reached the model, because they sat at the end of a long prompt that was cut off. Others lost to a default house style. I fixed both, then ran one A/B test on one product demo, without and with the rules. Contractions went from 6 to 0, and 'you' and 'your' from 15 to 1. That is one comparison, not a study. But it taught me to measure whether a model follows a rule, not assume it. Coding agents get rules the same way, so I want to ask this for them.</p>
-</blockquote>
-<p><strong>Slide 4. What is known, and the gap</strong> (about 60 seconds (129 words))</p>
-<blockquote>
-<p>Your lab's papers show what developers write in these files, and Agent READMEs also found fewer indentation violations after an indentation rule was added, in two repositories. Gloaguen and colleagues found that a whole file does not generally raise task success and adds over 20 percent to cost on average; their traces suggest instructions are followed, but they do not test single rules. Zhang and colleagues removed 18 curated rules one at a time, but measured only task success. Huang and colleagues, in Harness-IF, test single rules against a withheld baseline, but on tasks written for the benchmark. And the registered report by Voria and colleagues, with Dr. Kashiwa, plans to relate file changes to code quality. As far as I know, no study does these three things together.</p>
-</blockquote>
-<p><strong>Slide 5. Three research questions</strong> (about 40 seconds (85 words))</p>
-<blockquote>
-<p>RQ1 is the core: remove one real rule and see whether agents follow it less often on the same tasks. RQ2 asks which kinds of rules work. I can test wording directly, because I reword the same rule; specificity and linter coverage differ between rules, so those are associations. RQ3 asks whether keeping a rule changes code quality. I compare file versions on the same task, not runs that happened to follow the rule, and I leave out any check that encodes the rule itself.</p>
-</blockquote>
-<p><strong>Slide 6. Design: one rule at a time, on real tasks</strong> (about 60 seconds (135 words))</p>
-<blockquote>
-<p>A task is a merged pull request whose own tests fail before and pass after. The agent starts just before it, with no git history, and the task does not mention the rule. Every task runs with all five versions, so each task is its own control. The neutral sentence has the same length but no instruction, so comparing it with the original separates the rule's content from just having more text. A script measures what fraction of applicable places follow the rule, and I check each script by hand on at least 20 examples. Thirty rules, two tasks each, give at most 1,800 runs, about 1,300 to 1,900 dollars; a pilot sets the final numbers. Two limits: only rules a script can check, and one rule at a time cannot show how rules interact.</p>
-</blockquote>
-<p><strong>Slide 7. Two-year plan and expected results</strong> (about 45 seconds (101 words))</p>
-<blockquote>
-<p>Year 1: courses in software engineering and statistics, the checkers and harness, the pilot, then the main experiment. I also start a study of real pull requests, which extends the indentation check in Agent READMEs to more rules, with human pull requests as a comparison. Year 2: code quality, a first paper, and a small checker that developers rate. Your pull request study recommends a guideline file like CLAUDE.md for project conventions. My question is whether agents then follow those rules, which is why I want to do this research here. Thank you. I would be glad to hear your advice.</p>
-</blockquote>
-<p><strong>Timing check:</strong> about 714 spoken words, which is just under 5 minutes 30 seconds at a calm pace (the slide times above add up to 5:25). If a rehearsal runs over 5:30, cut the Yuki sentence on slide 2 first.</p>
+<h2 id="2-the-script">2. The script</h2>
+<p>The script is in <a href="ch02.html"><code>FULL_SCRIPT.md</code></a> in this folder (on the website: chapter 2). On 26 Oct it was rewritten in plain spoken English, with short sentences and normal words, so it sounds like you and not like a paper. It takes about 6 to 6.5 minutes.</p>
+<p>Speak slowly. Look at the camera, not the slide. Do not read it word for word: read it out loud twice, then say it your way. Each slide has a one-line <strong>Cue</strong> in case you lose your place.</p>
 <hr />
 <h2 id="3-the-questions-most-likely-to-come-after-the-slides">3. The questions most likely to come after the slides</h2>
 <p>The reviewers who read the deck as Dr. Reid and Dr. Ji listed these. Answer short first, then stop. Longer answers are in <a href="ch11.html"><code>03_Research_Plan_Defense/05_question_bank_with_model_answers.md</code></a> (IDs in brackets).</p>

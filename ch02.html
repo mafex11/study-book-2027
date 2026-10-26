@@ -145,25 +145,25 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 
 <p>Monday 26 October 2026, 10:30 IST (14:00 JST), Google Meet with Dr. Zhenlan Ji and Dr. Brittany Reid.
 Words in [brackets] are actions. Do not say them.</p>
-<p>Read this out loud at least three times today, so that tomorrow you are speaking it, not reading it.</p>
+<p>This is the plain version: short sentences, normal words, the way you would explain it to a friend at work. Read it out loud twice. Then present from the slides and just say it your way. If you lose your place, the <strong>Cue</strong> line under each slide is enough to get you going again.</p>
 <hr />
 <h2 id="part-a-joining-before-the-slides">Part A. Joining, before the slides</h2>
 <p>[Join at 10:25 IST. Camera on, mic on. Slides PDF already open in Preview.]</p>
 <p><strong>When they appear:</strong></p>
 <blockquote>
-<p>Good afternoon, Dr. Ji and Dr. Reid. Thank you very much for taking the time to meet me today.</p>
+<p>Good afternoon, Dr. Ji and Dr. Reid. Thank you for meeting me today.</p>
 </blockquote>
 <p><strong>If they ask "How are you?" or "Can you hear me?":</strong></p>
 <blockquote>
-<p>I am doing well, thank you. I can hear you clearly. I am joining from Bangalore, so it is morning here.</p>
+<p>I'm good, thank you. I can hear you fine. I'm in Bangalore, so it's morning here.</p>
 </blockquote>
 <p><strong>If they introduce themselves or the lab first, listen, then say:</strong></p>
 <blockquote>
-<p>Thank you. I have read your lab's papers on context files, so I am really glad to talk with you.</p>
+<p>Thank you. I've read your lab's papers on these context files, so I'm really happy to talk to you.</p>
 </blockquote>
 <p><strong>When they ask you to introduce yourself and your research:</strong></p>
 <blockquote>
-<p>Thank you. I prepared seven short slides, about six minutes. May I share my screen?</p>
+<p>Sure. I made seven short slides, about six minutes. Can I share my screen?</p>
 </blockquote>
 <p>[In Meet: Present now, then "A window", then choose Preview. In Preview press Cmd + Shift + F.]</p>
 <blockquote>
@@ -171,81 +171,92 @@ Words in [brackets] are actions. Do not say them.</p>
 </blockquote>
 <p>[Wait for "yes".]</p>
 <hr />
-<h2 id="part-b-the-slides-about-6-minutes">Part B. The slides (about 6 minutes)</h2>
+<h2 id="part-b-the-slides-about-6-to-65-minutes">Part B. The slides (about 6 to 6.5 minutes)</h2>
 <h3 id="slide-1-title-about-25-seconds">Slide 1. Title (about 25 seconds)</h3>
+<p><strong>Cue:</strong> CLAUDE.md, rules, do agents follow them, is the code better</p>
 <blockquote>
-<p>My name is Sudhanshu Pandit. My research question is: which rules in a file like this CLAUDE.md do coding agents actually follow? For example, if it says "put new tests in the tests folder", does the agent really do it? And does keeping a rule change the quality of the code?</p>
-<p>First, a little about me.</p>
+<p>My name is Sudhanshu Pandit. Coding agents like Claude Code read a file like this one, a CLAUDE.md. It has rules the developer wrote, like "put new tests in the tests folder".</p>
+<p>My question is simple. Does the agent actually follow these rules? And when it does, is the code any better?</p>
+<p>First, a bit about me.</p>
 </blockquote>
 <p>[Next slide]</p>
-<h3 id="slide-2-about-me-about-40-seconds">Slide 2. About me (about 40 seconds)</h3>
+<h3 id="slide-2-about-me-about-55-seconds">Slide 2. About me (about 55 seconds)</h3>
+<p><strong>Cue:</strong> degree, Layerpath, BrandMemory, Magic Editor, Yuki</p>
 <blockquote>
-<p>I finished my B.E. in Computer Science and Engineering at Visvesvaraya Technological University in May 2026, and worked in software engineering roles during my studies. Since November 2025, I have been an AI engineer on the founding team at Layerpath, where I build systems on top of large language models.</p>
-<p>On the right are three things I build. BrandMemory reads a company's writing rules from its website and gives them to a language model, so it writes in that company's style. Magic Editor is an AI assistant that edits product demos, and the user approves every edit. And Yuki, my side project, is a desktop AI agent for Mac and Windows.</p>
-<p>I use Claude Code and Codex every day and maintain their context files. My research question started with BrandMemory.</p>
+<p>I finished my B.E. in Computer Science at Visvesvaraya Technological University this May, and I worked as a software engineer during college.</p>
+<p>Since last November I've been an AI engineer at Layerpath, a small startup. I was on the founding team, and I build the AI parts of our product.</p>
+<p>On the right are three things I built. BrandMemory gives a model a company's writing rules, so the text sounds like that company. Magic Editor is an AI assistant that edits product demos, and the user approves every change. And Yuki, my side project, is an AI agent that can use Mac and Windows apps for you.</p>
+<p>I use Claude Code and Codex every day, and I keep their rule files up to date. My question came out of BrandMemory.</p>
 </blockquote>
 <p>[Next slide]</p>
 <h3 id="slide-3-where-my-question-comes-from-about-50-seconds">Slide 3. Where my question comes from (about 50 seconds)</h3>
+<p><strong>Cue:</strong> some rules did nothing, cut off, overridden, 6 to 0, 15 to 1, one example only</p>
 <blockquote>
-<p>When I measured BrandMemory's output, some rules had no effect, for two reasons. Some were cut off: they sat at the end of a long prompt and never reached the model. Others were overridden by a default house style.</p>
-<p>I fixed both, then ran one A/B test on one product demo, without and with the rules. Contractions went from 6 to 0, and "you" and "your" from 15 to 1, which matches two of the rules.</p>
-<p>That is one comparison, not a study. But it taught me to measure whether a model follows a rule, not assume it. Coding agents get their rules the same way, through CLAUDE.md and AGENTS.md, so I want to ask this question for them.</p>
+<p>When I tested BrandMemory, some rules did nothing. Some sat at the end of a long prompt and got cut off, so the model never saw them. Others did reach the model, but a default style in the prompt won over them.</p>
+<p>I fixed both, then made the same product demo twice, without the rules and with them. Contractions went from 6 to zero, and "you" and "your" from 15 to one. Both match rules in the file.</p>
+<p>It's one example, so it doesn't prove much. But it taught me to check whether a model follows a rule, not assume it. Coding agents get their rules the same way, so I want to check this properly for them.</p>
 </blockquote>
 <p>[Next slide]</p>
 <h3 id="slide-4-what-is-known-and-the-gap-about-55-seconds">Slide 4. What is known, and the gap (about 55 seconds)</h3>
+<p><strong>Cue:</strong> your lab's papers, whole file, task success only, benchmark tasks, nobody does all three</p>
 <blockquote>
-<p>Your lab's papers show what developers write in these files, and Agent READMEs also found fewer indentation violations after an indentation rule was added, in two repositories.</p>
-<p>Gloaguen and colleagues found that a whole file does not generally raise task success and adds over 20 percent to cost on average; their traces suggest instructions are followed, but they did not test single rules. Zhang and colleagues removed 18 curated rules one at a time, but measured only task success. Harness-IF tests single rules, but on tasks written for the benchmark. And the registered report by Voria and colleagues, with Dr. Kashiwa, plans to relate file changes to code quality.</p>
-<p>So, as far as I know, no study yet does these three things together: one real rule, real tasks from the same repositories, and scripts that measure both compliance and code quality.</p>
+<p>Your lab's papers looked at what developers actually write in these files. Agent READMEs also found fewer indentation mistakes after an indentation rule was added, in two repositories.</p>
+<p>Gloaguen and colleagues tested whole files. A file didn't really help agents finish more tasks, and it cost over 20 percent more. Zhang and colleagues removed rules one at a time, but only checked whether the task passed. Harness-IF tests single rules, but on tasks made for the benchmark. And Voria and colleagues, with Dr. Kashiwa, plan to link changes in these files to code quality.</p>
+<p>So as far as I can tell, nobody has done all three of these together: one real rule, real tasks from the same project, and checking both the rule and the code.</p>
 </blockquote>
 <p>[Next slide]</p>
-<h3 id="slide-5-three-research-questions-about-40-seconds">Slide 5. Three research questions (about 40 seconds)</h3>
+<h3 id="slide-5-three-research-questions-about-60-seconds">Slide 5. Three research questions (about 60 seconds)</h3>
+<p><strong>Cue:</strong> take a rule out, what kind of rules work, does the code get better</p>
 <blockquote>
-<p>RQ1 is the core: if I remove one real rule, do agents follow it less often on the same tasks?</p>
-<p>RQ2 asks which kinds of rules work: negative or positive wording, specificity, and whether the linter already enforces the rule. Wording I test directly, because I reword the same rule. The other two differ between rules, so I report them as associations.</p>
-<p>RQ3 asks whether keeping a rule changes code quality: tests, complexity and warnings. I compare file versions on the same task, not runs that happened to follow the rule, and I leave out any check that encodes the rule itself, so the result is not circular.</p>
-<p>I call a rule effective if agents follow it more often when it is in the file than when it is removed.</p>
+<p>So I have three questions.</p>
+<p>RQ1 is the main one. If I take one real rule out of the file, do agents follow it less on the same tasks? If they do, the rule was doing something.</p>
+<p>RQ2: what kind of rules work? "Do this" versus "don't do this", rules that name a specific file or command, and rules the linter already checks. The do-versus-don't part I test directly, because I write the same rule both ways. The other two I can only compare across rules, so I'll call them patterns, not causes.</p>
+<p>RQ3: does keeping a rule make the code better? Tests, complexity and warnings, with the rule versus without it, on the same task. I leave out any check that is basically the rule itself, or the answer would be yes by default.</p>
 </blockquote>
 <p>[Next slide]</p>
-<h3 id="slide-6-design-about-60-seconds">Slide 6. Design (about 60 seconds)</h3>
+<h3 id="slide-6-design-about-80-seconds">Slide 6. Design (about 80 seconds)</h3>
+<p><strong>Cue:</strong> real pull request, five versions, two agents, script checks the rule, 1,800 runs, pilot, two limits</p>
 <blockquote>
-<p>A task is a merged pull request whose own tests fail before and pass after. The agent starts just before it, with no git history, and the task text does not mention the rule.</p>
-<p>Every task runs with five versions of the file: original, rule removed, rule reworded, a neutral sentence of the same length, and no file. So each task is its own control, and the neutral sentence separates the rule's content from just having more text. Claude Code and Codex get the same text, three runs per version, in a clean container.</p>
-<p>A script measures what share of the applicable places follow the rule, and I check each script by hand on at least 20 examples. I also measure tests, complexity and warnings. With about 30 rules and 2 tasks each, that is at most 1,800 runs, about 1,300 to 1,900 dollars; a pilot on two repositories sets the final numbers.</p>
-<p>Two limits: only rules a script can check, and one rule at a time cannot show how rules interact.</p>
+<p>One test works like this. I take a merged pull request from a real project. Its tests fail before the change and pass after. The agent gets the code from just before it, with no git history. The task doesn't mention the rule.</p>
+<p>I run that task with five versions of the file: the original, the rule taken out, the rule reworded, a neutral sentence of the same length, and no file. The neutral sentence tells me the effect comes from the rule, not just from a longer file.</p>
+<p>Claude Code and Codex get the same text, three runs per version, in a fresh container each time. A script counts how often the rule was followed where it applies, and I'll check each script by hand on at least 20 examples.</p>
+<p>30 rules with two tasks each is at most 1,800 runs, roughly 1,300 to 1,900 dollars. A small pilot on two repositories comes first to get the real numbers.</p>
+<p>Two limits: I can only study rules a script can check, and one rule at a time won't show how rules affect each other.</p>
 </blockquote>
 <p>[Next slide]</p>
-<h3 id="slide-7-plan-and-expected-results-about-40-seconds">Slide 7. Plan and expected results (about 40 seconds)</h3>
+<h3 id="slide-7-plan-and-expected-results-about-60-seconds">Slide 7. Plan and expected results (about 60 seconds)</h3>
+<p><strong>Cue:</strong> year 1, year 2, dataset, evidence, small tool, why this lab</p>
 <blockquote>
-<p>In Year 1: courses in software engineering and statistics, the checkers and harness, the pilot, then the main experiment, and I start the real pull request study. In Year 2: code quality, a first paper, and a small checker that developers rate. I expect three results: a public dataset of real, checkable rules, evidence on which kinds of rules work, and that small checker.</p>
-<p>Why this lab: you study context files and agent code after it is merged, and your pull request study recommends a guideline file like CLAUDE.md. My study adds a controlled experiment on single rules: do agents then actually follow those rules? I also want to learn your methods for mining repositories and measuring quality. That is why I would really like to do this research in your lab.</p>
-<p>Thank you very much. I would be glad to hear your questions and advice.</p>
+<p>Year one is courses in software engineering and statistics, the checkers, the pilot, and the main experiment. I'll also start looking at real pull requests. Year two is the code quality part, a first paper, and a small tool that flags rules agents ignore, which developers will rate.</p>
+<p>So I hope to end up with a public dataset of real, checkable rules, evidence on which kinds of rules work, and that tool.</p>
+<p>Why your lab? You've studied these files, and what happens to agent code after it's merged. Your pull request paper even recommends keeping a file like CLAUDE.md. My study asks the next step: once you write those rules, does the agent follow them? And I want to learn how you mine repositories and measure code quality.</p>
+<p>That's all from me. Thank you, and I'd be happy to hear your questions and advice.</p>
 </blockquote>
 <p>[Stop sharing.]</p>
 <hr />
 <h2 id="part-c-after-the-slides">Part C. After the slides</h2>
 <p><strong>Right after the last slide:</strong></p>
 <blockquote>
-<p>I will stop sharing so we can talk.</p>
+<p>I'll stop sharing so we can talk.</p>
 </blockquote>
 <p><strong>Useful lines during the questions:</strong></p>
 <ul>
-<li>Did not hear the question: "Sorry, could you repeat the question, please?"</li>
-<li>Need a moment: "That is a good question. Let me think for a second."</li>
-<li>Do not know: "I am not sure yet. I would check it by ..." (then say how).</li>
+<li>Did not hear the question: "Sorry, could you say that again?"</li>
+<li>Need a moment: "Good question. Let me think for a second."</li>
+<li>Do not know: "I'm not sure yet. I'd check it by ..." (then say how).</li>
 <li>Want to check you understood: "Do you mean ...?"</li>
 </ul>
 <p><strong>When they ask "Do you have any questions for us?":</strong></p>
 <blockquote>
-<p>Yes, thank you. I read that the Information Science IPGP scholarship accepts applications until 13 November, for October 2027 entry. If you think my application is suitable, would it be possible to apply with the lab's support?</p>
+<p>Yes, one. I saw that the Information Science IPGP scholarship is open until 13 November, for October 2027 entry. If you think my application is a good fit, could I apply with the lab's support?</p>
 </blockquote>
 <p>Second question, only if there is time:</p>
 <blockquote>
-<p>Is there anything you would recommend I read or build before I start, so that I can be useful to the lab from the first month?</p>
+<p>Is there anything you'd suggest I read or build before I start, so I can be useful to the lab from the first month?</p>
 </blockquote>
 <p><strong>Closing:</strong></p>
 <blockquote>
-<p>Thank you very much for your time today, Dr. Ji and Dr. Reid. I really enjoyed talking with you, and I look forward to hearing from you.</p>
+<p>Thank you so much for your time, Dr. Ji and Dr. Reid. I really enjoyed talking with you, and I look forward to hearing from you.</p>
 </blockquote>
 <p>[Wait for them to end the call, or say "Goodbye" and leave after they do.]</p>
 </article>

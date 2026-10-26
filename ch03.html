@@ -389,8 +389,8 @@ Listen for: one good question, ideally about applying for the IPGP scholarship w
     '<button type="button" class="sbtn" data-a="random">\u{1F3B2} Random</button>' +
     '<button type="button" class="sbtn" data-a="stop">■ Stop</button>' +
     '</div><div class="sayrow">' +
-    '<label>Speed <select class="ssel" data-s="rate"><option value="0.8">0.8x</option><option value="0.9" selected>0.9x</option><option value="1">1x</option><option value="1.1">1.1x</option></select></label>' +
-    '<label>Voice <select class="ssel" data-s="voice"><option value="">Default</option></select></label>' +
+    '<label>Speed <select class="ssel" data-s="rate"><option value="0.8">0.8x</option><option value="0.9">0.9x</option><option value="0.95" selected>0.95x</option><option value="1">1x</option><option value="1.1">1.1x</option></select></label>' +
+    '<label>Voice <select class="ssel" data-s="voice"><option value="">Best available</option></select></label>' +
     '<label><input type="checkbox" class="stwo" checked> Two voices (Dr. Ji / Dr. Reid)</label>' +
     '</div>' +
     (hasTTS ? "" : '<p class="saynote">This browser cannot speak text. Try Chrome or Safari.</p>');
@@ -404,11 +404,26 @@ Listen for: one good question, ideally about applying for the IPGP scholarship w
 
   var rateSel = bar.querySelector('[data-s="rate"]'), voiceSel = bar.querySelector('[data-s="voice"]'), two = bar.querySelector(".stwo");
 
+  var NOVELTY = /^(Albert|Bad News|Bahh|Bells|Boing|Bubbles|Cellos|Deranged|Good News|Hysterical|Jester|Junior|Organ|Pipe Organ|Superstar|Trinoids|Whisper|Wobble|Zarvox|Fred|Ralph|Kathy|Princess|Rocko|Grandma|Grandpa|Eddy|Flo|Reed|Sandy|Shelley)\b/i;
+  var GOOD = /^(Samantha|Daniel|Karen|Moira|Tessa|Ava|Allison|Susan|Tom|Serena|Kate|Oliver|Alex|Evan|Nathan|Zoe|Joelle|Noelle|Martha|Arthur|Catherine|Gordon|Rishi|Veena|Aaron|Nicky)\b/i;
+  function score(v) {
+    var n = v.name, sc = 0;
+    if (NOVELTY.test(n)) return -1000;
+    if (/Google (US|UK) English/i.test(n)) sc += 100;
+    if (/(Natural|Neural|Online)/i.test(n)) sc += 90;
+    if (/(Enhanced|Premium)/i.test(n)) sc += 80;
+    if (GOOD.test(n)) sc += 70;
+    if (/en[-_](US|GB)/i.test(v.lang)) sc += 5;
+    if (/en[-_](IN|AU|IE|ZA|NZ)/i.test(v.lang)) sc += 3;
+    return sc;
+  }
   function loadVoices() {
     if (!hasTTS) return;
-    voices = speechSynthesis.getVoices().filter(function (v) { return /^en(-|_|$)/i.test(v.lang); });
+    voices = speechSynthesis.getVoices()
+      .filter(function (v) { return /^en(-|_|$)/i.test(v.lang) && score(v) >= 0; })
+      .sort(function (a, b) { return score(b) - score(a); });
     var keep = voiceSel.value;
-    voiceSel.innerHTML = '<option value="">Default</option>' + voices.map(function (v, i) {
+    voiceSel.innerHTML = '<option value="">Best available</option>' + voices.map(function (v, i) {
       return '<option value="' + i + '">' + v.name + " (" + v.lang + ")</option>";
     }).join("");
     voiceSel.value = keep;
@@ -416,12 +431,15 @@ Listen for: one good question, ideally about applying for the IPGP scholarship w
   if (hasTTS) { loadVoices(); speechSynthesis.onvoiceschanged = loadVoices; }
 
   function pickVoice(role) {
-    if (voiceSel.value !== "") return voices[+voiceSel.value];
+    if (voiceSel.value !== "") return voices[+voiceSel.value] || null;
     if (!voices.length) return null;
-    var pref = voices.filter(function (v) { return /en-(US|GB)/i.test(v.lang); });
-    var pool = pref.length ? pref : voices;
-    if (two.checked && pool.length > 1 && role === "Ji") return pool[1];
-    return pool[0];
+    if (two.checked && role === "Ji") {
+      var base = voices[0].name.split(" ")[0];
+      for (var i = 1; i < voices.length; i++) {
+        if (voices[i].name.split(" ")[0] !== base && score(voices[i]) >= 70) return voices[i];
+      }
+    }
+    return voices[0];
   }
 
   function play(idx) {
@@ -436,8 +454,10 @@ Listen for: one good question, ideally about applying for the IPGP scholarship w
     var u = new SpeechSynthesisUtterance(it.text);
     var v = pickVoice(it.role);
     if (v) { u.voice = v; u.lang = v.lang; } else { u.lang = "en-US"; }
-    u.rate = parseFloat(rateSel.value) || 0.9;
-    speechSynthesis.speak(u);
+    u.rate = parseFloat(rateSel.value) || 0.95;
+    u.pitch = 1;
+    window.__sayUtt = u; // keep a reference: Chrome otherwise stops speech midway
+    setTimeout(function () { speechSynthesis.speak(u); }, 80);
   }
   function next() { play(cur + 1 < items.length ? cur + 1 : 0); }
 
